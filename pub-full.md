@@ -7,7 +7,7 @@ permalink: /pub-full/
 [Selected Publication List Here](/pub/)
 
 (* indicates corresponding authors.)
-
+<!-- 
 <h2>Preprints</h2>
 {% assign pubs = site.data.pub %}
 {% assign print = 0 %}
@@ -42,7 +42,7 @@ permalink: /pub-full/
         {% endif %}
         {% assign print = 0 %}
     {% endfor %}
-</ul>
+</ul> -->
 
 <h2>Conference Papers</h2>
 {% assign pubs = site.data.pub %}
