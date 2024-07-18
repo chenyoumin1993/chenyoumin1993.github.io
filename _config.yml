@@ -7,11 +7,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://chenyoumin1993.github.io/" # the base hostname & protocol for your site
 
 schoolname: "Tsinghua University"
-schoolurl: "https://www.tsinghua.edu.cn/en/"
-twitter_username: username 
+schoolurl: "https://www.tsinghua.edu.cn"
+github_username: chenyoumin1993 
 
 address: |
-    8-201, East Main Building, Tsinghua Univ.
+    F5, Ziqiang Science and Technology Building, Tsinghua University.
     Beijing
     China
 
