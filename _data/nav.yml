@@ -1,0 +1,16 @@
+items:
+- url: /
+  name: Home
+  icon_class: fa fa-home fa-lg
+
+- url: /research/
+  name: Research 
+  icon_class: fas fa-calendar-alt
+
+- url: /pub/
+  name: Publication
+  icon_class: fas fa-book-reader
+
+- url: /misc/
+  name: Miscellaneous
+  icon_class: fas fa-user-graduate

@@ -1,0 +1,400 @@
+# - title: "Efficient Multimodal LLM Serving with OmniServe"
+#   authors:
+#     - author: Yangyang Feng
+#     - author: Youmin Chen
+#     - author: Kai Ren
+#     - author: Jiwu Shu
+#   # pubname: The 19th European Conference on Computer Systems
+#   # pubnamebrief: EuroSys'24
+#   # year: 2024
+#   # link: https://2024.eurosys.org/
+#   # type: conference
+#   highlight: 3
+
+# - title: "Fast Core Scheduling with Userspace Process Abstraction"
+#   authors:
+#     - author: Jiazhen Lin
+#     - author: Youmin Chen
+#     - author: Shiwei Gao
+#     - author: Youyou Lu
+#   # pubname: The 19th European Conference on Computer Systems
+#   # pubnamebrief: EuroSys'24
+#   # year: 2024
+#   # link: https://2024.eurosys.org/
+#   # type: conference
+#   highlight: 3
+
+# - title: "Fast State Restoration in LLM Serving with HCache"
+#   authors:
+#     - author: Shiwei Gao
+#     - author: Youmin Chen
+#     - author: Jiwu Shu
+#   # pubname: The 19th European Conference on Computer Systems
+#   # pubnamebrief: EuroSys'24
+#   # year: 2024
+#   # link: https://2024.eurosys.org/
+#   # type: conference
+#   highlight: 3
+
+# - title: "SchedKV: Rethinking the Threading Design for Persistent Key-Value Stores"
+#   authors:
+#     - author: Zeqi Li
+#     - author: Youmin Chen
+#     - author: Jiwu Shu
+#   # pubname: The 19th European Conference on Computer Systems
+#   # pubnamebrief: EuroSys'24
+#   # year: 2024
+#   # link: https://2024.eurosys.org/
+#   # type: conference
+#   highlight: 3
+
+# - title: "Medusa: Accelerating Serverless LLM Inference with Materialization"
+#   authors:
+#     - author: Shaoxun Zeng
+#     - author: Minhui Xie
+#     - author: Shiwei Gao
+#     - author: Youmin Chen
+#     - author: Youyou Lu
+#   # pubname: The 19th European Conference on Computer Systems
+#   # pubnamebrief: EuroSys'24
+#   # year: 2024
+#   # link: https://2024.eurosys.org/
+#   # type: conference
+#   highlight: 3
+
+- title: "Exploring the Asynchrony of Slow Memory Filesystem with EasyIO"
+  authors:
+    - author: Bohong Zhu
+    - author: Youmin Chen
+    - author: Jiwu Shu
+  corresponding: Youmin Chen
+  pubname: The 19th European Conference on Computer Systems
+  pubnamebrief: EuroSys'24
+  year: 2024
+  link: https://2024.eurosys.org/
+  type: conference
+  highlight: 1
+
+
+- title: "λ-IO: A Unified IO Stack for Computational Storage"
+  authors:
+    - author: Zhe Yang
+    - author: Youyou Lu
+    - author: Xiaojian Liao
+    - author: Youmin Chen
+    - author: Junru Li
+    - author: Siyu He
+    - author: Jiwu Shu
+  pubname: The 21st USENIX Conference on File and Storage Technologies 
+  pubnamebrief: FAST'23
+  year: 2023
+  link: https://www.usenix.org/conference/fast23/presentation/yang-zhe
+  code: https://github.com/thustorage/lambda-io
+  type: conference
+  highlight: 1
+
+
+
+- title: "Progress on Storage Systems for Disaggregated Data Centers"
+  title-cn: "分离式数据中心的存储系统研究进展"
+  authors:
+    - author: 舒继武
+      author-en: Jiwu Shu
+    - author: 陈游旻
+      author-en: Youmin Chen
+    - author: 汪庆
+      author-en: Qing Wang
+    - author: 王晶
+      author-en: Jing Wang
+    - author: 李俊儒
+      author-en: Junru Li
+    - author: 廖晓坚
+      author-en: Xiaojian liao
+  pubname: "中国科学: 信息科学"
+  pubname-en: "SCIENTIA SINICA Informationis"
+  volume: "ISSN 1674-7267"
+  year: 2023
+  pdf: https://storage.cs.tsinghua.edu.cn/publications/分离式数据中心的存储系统研究进展.pdf
+  link: https://storage.cs.tsinghua.edu.cn/publications/分离式数据中心的存储系统研究进展.pdf
+  type: journal
+  highlight: 3
+
+
+- title: "TH-iSSD: Design and Implementation of a Generic and Reconfigurable Near-Data Processing Framework"
+  authors:
+    - author: Jiwu Shu
+    - author: Kedong Fang
+    - author: Youmin Chen
+    - author: Shuo Wang
+      author-cn: 王硕
+  pubname: Transactions on Embedded Computing Systems 
+  pubnamebrief: ACM TECS
+  year: 2023
+  link: 
+  type: journal
+  highlight: 2
+
+
+- title: "Plor: General Transactions with Predictable, Low Tail Latency"
+  authors:
+    - author: Youmin Chen
+    - author: Xiangyao Yu
+    - author: Paraschos Koutris 
+    - author: Andrea Arpaci-Dusseau
+    - author: Remzi Arpaci-Dusseau
+    - author: Jiwu Shu
+  pubname: ACM SIGMOD International Conference on Management of Data 
+  pubnamebrief: SIGMOD'22
+  year: 2022
+  link: /papers/sigmod22plor.pdf
+  type: conference
+  highlight: 1
+
+- title: "Aria: Tolerating Skewed Workloads in Secure In-memory Key-value Stores"
+  authors:
+    - author: Fan Yang
+    - author: Youmin Chen
+    - author: Youyou Lu
+    - author: Qing Wang
+    - author: Jiwu Shu
+  pubname: 37th IEEE International Conference on Data Engineering 
+  pubnamebrief: ICDE'21
+  year: 2021
+  link: /papers/icde21-aria.pdf
+  type: conference
+  highlight: 1
+
+- title: "Scalable Persistent Memory File System with Kernel-Userspace Collaboration"
+  authors:
+    - author: Youmin Chen
+    - author: Youyou Lu
+    - author: Bohong Zhu
+    - author: Andrea Arpaci-Dusseau
+    - author: Remzi Arpaci-Dusseau
+    - author: Jiwu Shu
+  pubname: USENIX Conference on File and Storage Technologies 
+  pubnamebrief: FAST'21
+  year: 2021
+  link: /papers/fast21-kucofs.pdf
+  type: conference
+  highlight: 1
+
+- title: "Concordia: Distributed Shared Memory with In-Network Cache Coherence"
+  authors:
+    - author: Qing Wang
+    - author: Youyou Lu
+    - author: Erci Xu
+    - author: Junru Li
+    - author: Youmin Chen
+    - author: Jiwu Shu
+  pubname: USENIX Conference on File and Storage Technologies 
+  pubnamebrief: FAST'21
+  year: 2021
+  link: /papers/fast21-concordia.pdf
+  type: conference
+  highlight: 1
+
+
+
+- title: "Octopus+: an RDMA-enabled Distributed Persistent Memory File System"
+  authors:
+    - author: Bohong Zhu
+    - author: Youmin Chen
+    - author: Qing Wang
+    - author: Youyou Lu
+    - author: Jiwu Shu
+  pubname: ACM Transactions on Storage 
+  pubnamebrief: TOS
+  year: 2021
+  link: /papers/tos21octopus.pdf
+  type: journal
+  highlight: 2
+
+- title: "非易失主存的系统软件研究进展"
+  authors:
+    - author: 舒继武
+      author-en: Jiwu Shu
+    - author: 陈游旻
+      author-en: Youmin Chen
+    - author: 胡庆达
+      author-en: Qingda Hu
+    - author: 陆游游
+      author-en: Youyou Lu
+  pubname: "中国科学：信息科学"
+  volume: "51(6): 869-899"
+  year: 2021
+  link: /papers/非易失主存的系统软件研究进展.pdf
+  type: journal
+  highlight: 3
+
+- title: "μTree: a Persistent B+-Tree with Low Tail Latency"
+  authors:
+    - author: Youmin Chen
+    - author: Youyou Lu
+    - author: Kedong Fang
+    - author: Qing Wang
+    - author: Jiwu Shu
+  pubname: 46th International Conference on Very Large Data Bases
+  pubnamebrief: VLDB'20
+  year: 2020
+  link: /papers/vldb20-utree.pdf
+  type: conference
+  slide: /slides/vldb20-slide-utree.pdf
+  highlight: 1
+
+
+- title: "FlatStore: an Efficient Log-Structured Key-Value Storage Engine for Persistent Memory"
+  authors:
+    - author: Youmin Chen
+    - author: Youyou Lu
+    - author: Fan Yang
+    - author: Qing Wang
+    - author: Yang Wang
+    - author: Jiwu Shu
+  pubname: Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems
+  pubnamebrief: ASPLOS'20
+  year: 2020
+  link: /papers/asplos20-flatstore.pdf
+  type: conference
+  slide: /slides/asplos20-slide-flatstore.pdf
+  highlight: 1
+
+- title: "TH-DPMS: Design and Implementation of an RDMA-enabled Distributed Persistent Memory Storage System"
+  authors:
+    - author: Jiwu Shu
+    - author: Youmin Chen
+    - author: Qing Wang
+    - author: Bohong Zhu
+    - author: Junru Li
+    - author: Youyou Lu
+  pubname: ACM Transactions on Storage
+  pubnamebrief: TOS
+  year: 2020
+  link: /papers/tos20dpms.pdf
+  type: journal
+  highlight: 2
+
+
+- title: "ShieldNVM: An Efficient and Fast Recoverable System for Secure Non-Volatile Memory"
+  authors:
+    - author: Fan Yang
+    - author: Youmin Chen
+    - author: Haiyu Mao
+    - author: Youyou Lu
+    - author: Jiwu Shu
+  pubname: ACM Transactions on Storage
+  pubnamebrief: TOS
+  year: 2020
+  link: /papers/tos20shieldnvm.pdf
+  type: journal
+  highlight: 2
+
+
+- title: "Understanding and analysis of B+ trees on NVM towards consistency and efficiency"
+  authors:
+    - author: Jiangkun Hu
+    - author: Youmin Chen
+    - author: Youyou Lu
+    - author: Xubin He
+    - author: Jiwu Shu
+  pubname: CCF Transactions on High Performance Computing
+  pubnamebrief: CCF-THPC
+  year: 2020
+  link: 
+  type: journal
+  highlight: 0
+
+
+
+- title: "No Compromises: Secure NVM with Crash Consistency, Write-Efficiency and High-Performance"
+  authors:
+    - author: Fan Yang
+    - author: Youyou Lu
+    - author: Youmin Chen
+    - author: Haiyu Mao
+    - author: Jiwu Shu
+  pubname: Design Automation Conference
+  pubnamebrief: DAC'19
+  year: 2019
+  link: /papers/dac19-ccNVM.pdf
+  type: conference
+  highlight: 1
+
+
+- title: "Scalable RDMA RPC on Reliable Connection with Efficient Resource Sharing"
+  authors:
+    - author: Youmin Chen
+    - author: Youyou Lu
+    - author: Jiwu Shu
+  pubname: Proceedings of the Fourteenth EuroSys Conference
+  pubnamebrief: EuroSys'19
+  year: 2019
+  link: /papers/eurosys19-scalerpc.pdf
+  slide: /slides/eurosys19-slide-ScaleRPC.pdf
+  type: conference
+  highlight: 1
+
+
+
+- title: "基于RDMA的分布式存储系统研究综述"
+  authors:
+    - author: 陈游旻
+      author-en: Youmin Chen
+    - author: 陆游游
+      author-en: Youyou Lu
+    - author: 罗圣美
+      author-en: Shengmei Luo
+    - author: 舒继武
+      author-en: Jiwu Shu
+  pubname: "计算机研究与发展"
+  pubname-en: "Journal of Computer Research and Development"
+  volume: "55(2): 227-239"
+  year: 2019
+  link: /papers/基于RDMA的分布式存储系统研究综述.pdf
+  type: journal
+  highlight: 3
+
+
+
+
+- title: "Efficient and Consistent NVMM Cache for SSD-based File System"
+  authors:
+    - author: Youmin Chen
+    - author: Youyou Lu
+    - author: Pei Chen
+    - author: Jiwu Shu
+  pubname: IEEE Transactions on Computers
+  pubnamebrief: TC
+  year: 2018
+  link: tc18fccm.pdf
+  type: journal
+  highlight: 2
+
+
+- title: "HiNFS: A Persistent Memory File System with Both Buffering and Direct-Access"
+  authors:
+    - author: Youmin Chen
+    - author: Jiwu Shu
+    - author: Jiaxin Ou
+    - author: Youyou Lu
+  pubname: ACM Transactions on Storage
+  pubnamebrief: TOS
+  year: 2018
+  link: /papers/tos18hinfs.pdf
+  type: journal
+  highlight: 2
+
+
+
+- title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System"
+  authors:
+    - author: Youyou Lu
+    - author: Jiwu Shu
+    - author: Youmin Chen
+    - author: Tao Li
+  pubname: USENIX Annual Technical Conference
+  pubnamebrief: USENIX ATC'17
+  year: 2017
+  link: /papers/atc17-octopus.pdf
+  type: conference
+  highlight: 1

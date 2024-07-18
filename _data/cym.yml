@@ -1,0 +1,45 @@
+# Describe your recent news
+news:
+  - title: Sept, 2023, Our paper (EasyIO)  has been accepted by EuroSys'24.
+  - title: Sept, 2022, One proposal is funded by NSFC (Youth Program).
+  - title: Dec, 2021, Plor (transactions w/ predictable and low tail latency) has been accepted by SIGMOD'22.
+  - title: May, 2021, I successfully defended my Ph.D. dissertation.
+  - title: Feb, 2021, Aria (a secure key-value store) has been accpeted by ICDE'21.
+  - title: Dec, 2020, Serve as a student reviewer of [JSys](https://www.jsys.org/cfp_students/), a diamond open-access journal covering all areas of computer systems research.
+  - title: Dec, 2020, two papers (KucoFS, Concordia) have been accepted by USENIX FAST'21.
+  - title: Aug, 2020, μTree (a Persistent B+-Tree with Low Tail Lateny) has been accepted by VLDB'20 ([slides](/slides/vldb20-slide-utree.pdf)).
+  - title: Nov, 2019. FlatStore (an Efficient Log-Structured Key-Value Storage Engine for Persistent Memory) has been accepted by ASPLOS'20 ([talk](https://www.youtube.com/watch?v=TCq6iLuVRHE) is now available on YouTube).
+  - title: Nov, 2019. Moved to UW-Madison.
+  - title: |
+        Aug, 2019. Our paper "Kernel/User-level Collaborative Persistent Memory File System with Efficiency and Protection" is available on [arXiv](https://arxiv.org/pdf/1908.10740.pdf).
+  - title: Mar, 2019. I will join UW-Madison to work as a visiting student researcher in this fall, advised by Remzi H. Arpaci-Dusseau (conditional).
+  - title: Dec, 2018. Our paper "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing" has been accepted by Eurosys'19.
+
+# Describe the honors you have before.
+honors:
+  - title: CCF Outstanding Doctoral Dissertation Award, 2021. 
+  - title: <a href="https://chinasys.org/doku.php?id=2021-09-23">ACM SIGOPS ChinaSys Doctoral Dissertation Award</a>, 2021. 
+  - title: Distinguished PhD Dissertation Award of Tsinghua University (ranked 1st among all applicants in the CS Department), 2021.
+  - title: Shuimu Tsinghua Scholar (清华大学"水木学者"计划), 2021.
+  - title: Selected into the National Postdoctoral Innovative Talent Support Program (中国博士后创新人才支持计划, only 14 CSers nationwide were selected), 2021.
+  - title: CCF Technological Invention Award, first prize (中国计算机协会技术发明奖一等奖，第2完成人), 2020.
+  - title: Huawei OlympusMons Award (华为奥林帕斯奖，第3完成人), 2020.
+  - title: National Scholarship, Tsinghua University, 2020 (9 out of 100+ PhD students in the CS Department).
+  - title: First-class Scholarship (Huawei), Tsinghua University, 2019.
+  - title: First-class Scholarship (CreditEase), Tsinghua University, 2018.
+  # - title: Run Corporation Scholarship, Beihang University, 2015.
+  # - title: Second Prize Scholarship for Freshman in Beihang University, 2012.
+
+talks:
+  - title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System, Santa Clara, 2017"
+  - title: "Log-Structured Non-Volatile Memory, UCSD, 2019"
+  - title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System, UCSD, 2019"
+  - title: "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing, Dresden, Germany, 2019."
+
+services:
+  - title: 2024 - Program Co-Chair of the 25th ChinaSys Workshop
+  - title: 2022 - Youth Executive Committee Member of ACM ChinaSys
+  - title: 2022 - PC Member of ICPADS'22 (HPC and Architecture Track), Reviewer of TOS and CCF-THPC
+  - title: 2021 - Reviewer of IEEE Transactions on Parallel and Distributed Systems (TPDS)
+  - title: 2020 - Reviewer of IEEE Transactions on Computers (TC)
+  - title: 2019 - Reviewer of ACM Transactions on Storage (ToS), Journal of Systems and Architecture (JSA)
