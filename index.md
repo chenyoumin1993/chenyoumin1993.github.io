@@ -9,7 +9,7 @@ I am a Postdoctoral Researcher with [the Department of Computer Science and Tech
 [Tsinghua University](https://www.tsinghua.edu.cn/en/).
 I obtained my Ph.D. degree from Tsinghua University (advised by [Jiwu Shu](http://storage.cs.tsinghua.edu.cn/~jiwu-shu) 
 and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor
-degree from [Honors College (formerly known as School of Advanced 
+degree from [Honors College (formerly School of Advanced 
 Engineering)](http://hc.buaa.edu.cn/), [Beihang University](http://www.buaa.edu.cn).
 During 2019 - 2020, I worked as a 
 visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison, 
@@ -21,8 +21,7 @@ I build fast and robust next-gen data and storage systems with the generic goal 
 high device bandwidth utilization, low CPU cost, and high and predictable performance.
 I also aim to leverage my expertise to construct innovative systems tailored to broader contexts, 
 such as memory disaggregation and AI storage.
-My work has been published 
-on FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
+My work has been published on FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
 <!-- </div> -->
 
 <div class="row">

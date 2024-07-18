@@ -1,5 +1,6 @@
 # Describe your recent news
 news:
+  - title: July, 2024, I will join SJTU as Tenure-Track Associate Professor.
   - title: Sept, 2023, Our paper (EasyIO)  has been accepted by EuroSys'24.
   - title: Sept, 2022, One proposal is funded by NSFC (Youth Program).
   - title: Dec, 2021, Plor (transactions w/ predictable and low tail latency) has been accepted by SIGMOD'22.
@@ -38,6 +39,7 @@ talks:
 
 services:
   - title: 2024 - Program Co-Chair of the 25th ChinaSys Workshop
+  - title: 2024 - External Reviewer Committee (ERC) of USENIX ATC'24
   - title: 2022 - Youth Executive Committee Member of ACM ChinaSys
   - title: 2022 - PC Member of ICPADS'22 (HPC and Architecture Track), Reviewer of TOS and CCF-THPC
   - title: 2021 - Reviewer of IEEE Transactions on Parallel and Distributed Systems (TPDS)
