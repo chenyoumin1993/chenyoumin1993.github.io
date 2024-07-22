@@ -20,8 +20,8 @@ degree from [Honors College (formerly School of Advanced
 Engineering)](http://hc.buaa.edu.cn/), [Beihang University](http://www.buaa.edu.cn).
 During 2019 - 2020, I worked as a 
 visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison, 
-advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/), 
-[Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/), and [Xiangyao Yu](http://xiangyaoyu.net/).
+advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and 
+[Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 
 <div class="row">
 {% include announcements.html %}
