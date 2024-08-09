@@ -1,21 +1,20 @@
 # Describe your recent news
 news:
-  - title: Aug, 2024, Vessel (a userspace process abstraction with fast context switch) has been accepted to SOSP'24.
   - title: July, 2024, I will join SJTU as Tenure-Track Associate Professor.
-  - title: Sept, 2023, Our paper (EasyIO)  has been accepted to EuroSys'24.
+  - title: Sept, 2023, Our paper (EasyIO)  has been accepted by EuroSys'24.
   - title: Sept, 2022, One proposal is funded by NSFC (Youth Program).
-  - title: Dec, 2021, Plor (transactions w/ predictable and low tail latency) has been accepted to SIGMOD'22.
+  - title: Dec, 2021, Plor (transactions w/ predictable and low tail latency) has been accepted by SIGMOD'22.
   - title: May, 2021, I successfully defended my Ph.D. dissertation.
-  - title: Feb, 2021, Aria (a secure key-value store) has been accpeted to ICDE'21.
+  - title: Feb, 2021, Aria (a secure key-value store) has been accpeted by ICDE'21.
   - title: Dec, 2020, Serve as a student reviewer of [JSys](https://www.jsys.org/cfp_students/), a diamond open-access journal covering all areas of computer systems research.
-  - title: Dec, 2020, two papers (KucoFS, Concordia) have been accepted to USENIX FAST'21.
-  - title: Aug, 2020, μTree (a Persistent B+-Tree with Low Tail Lateny) has been accepted to VLDB'20 ([slides](/slides/vldb20-slide-utree.pdf)).
-  - title: Nov, 2019. FlatStore (an Efficient Log-Structured Key-Value Storage Engine for Persistent Memory) has been accepted to ASPLOS'20 ([talk](https://www.youtube.com/watch?v=TCq6iLuVRHE) is now available on YouTube).
+  - title: Dec, 2020, two papers (KucoFS, Concordia) have been accepted by USENIX FAST'21.
+  - title: Aug, 2020, μTree (a Persistent B+-Tree with Low Tail Lateny) has been accepted by VLDB'20 ([slides](/slides/vldb20-slide-utree.pdf)).
+  - title: Nov, 2019. FlatStore (an Efficient Log-Structured Key-Value Storage Engine for Persistent Memory) has been accepted by ASPLOS'20 ([talk](https://www.youtube.com/watch?v=TCq6iLuVRHE) is now available on YouTube).
   - title: Nov, 2019. Moved to UW-Madison.
   - title: |
         Aug, 2019. Our paper "Kernel/User-level Collaborative Persistent Memory File System with Efficiency and Protection" is available on [arXiv](https://arxiv.org/pdf/1908.10740.pdf).
   - title: Mar, 2019. I will join UW-Madison to work as a visiting student researcher in this fall, advised by Remzi H. Arpaci-Dusseau (conditional).
-  - title: Dec, 2018. Our paper "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing" has been accepted to Eurosys'19.
+  - title: Dec, 2018. Our paper "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing" has been accepted by Eurosys'19.
 
 # Describe the honors you have before.
 honors:
