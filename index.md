@@ -24,7 +24,7 @@ advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and
 [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 
 <p style="color: #c00000; font-weight: bold;">I am currently seeking PhD students/undergrad interns to work on storage systems, operating systems, and interactions between AI and systems.
-If you are interested, please check out the <a href="/static_files/recruitment.pdf">details and don’t hesitate to reach out via email.</p>
+If you are interested, please check out the <a href="/static_files/recruitment.pdf">details</a> and don’t hesitate to reach out via email.</p>
 
 <div class="row">
 {% include announcements.html %}
