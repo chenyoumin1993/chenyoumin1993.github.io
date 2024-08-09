@@ -23,8 +23,9 @@ visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison,
 advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and 
 [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 
-<p style="color: #c00000; font-weight: bold;">I am currently seeking PhD students/undergrad interns to work on storage systems, operating systems, and interactions between AI and systems.
-If you are interested, please check out the <a href="/static_files/recruitment.pdf">details</a> and don’t hesitate to reach out via email.</p>
+<p style="color: #c00000; font-weight: bold;">I am currently seeking PhD students/undergrad interns to work on storage systems, operating systems, and interactions between AI and systems. 
+    If you are interested, please refer to the <a href="/static_files/recruitment.pdf" style="text-decoration: underline; color: blue;">details</a> and don't hesitate to reach out via email.</p>
+
 
 <div class="row">
 {% include announcements.html %}
