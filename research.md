@@ -32,7 +32,7 @@ persistent distributed shared memory (or pDSM) to eliminate redundant memory cop
 
 <h2>CPU-efficient IO Engine</h2>
 
-2010 - 2024
+2020 - 2024
 
 Purely reducing the overhead of storage software is still not enough; system designers must be
 also device-aware since the emerging hardware typically exhibits bizarre performance behavior. For example,
@@ -44,13 +44,13 @@ and an RPC system to enable RDMA to work at a larger scale ([ScaleRPC[EuroSys'19
 
 <h2>Low Tail Latency Concurrency Control</h2>
 
-2010 - 2024
+2020 - 2024
 
 Apart from seeking higher throughput and lower latency, datacenter applications also
 require their performance to be predictable (often defined as 99th or 99.9th percentile latencies). Latency
 variability can arise for many reasons, including sharing resources (e.g., CPU cores, caches, memory bandwidth,
 etc.), background activities, queuing, and others. In the past years, we have witnessed an active line of
-research work that improves performance predictability at different layers, but they ignore that fact that the
+research work that improves performance predictability at different layers, but they ignore the fact that the
 workload is another source of incurring latency spikes due to request conflicts. Here, I take a much deeper dive
 to the concurrency protocol design and introduced coordinated concurrency control ([uTree[VLDB'20]](/papers/vldb20-utree.pdf)) and pessimistic
 locking and opportunistic reading ([Plor[SIGMOD'22]](/papers/sigmod22plor.pdf)) with the workload-aware principle in mind.
