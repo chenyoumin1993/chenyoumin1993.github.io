@@ -61,6 +61,19 @@
 #   # link: https://2024.eurosys.org/
 #   # type: conference
 #   highlight: 3
+- title: "Fast Core Scheduling with Userspace Process Abstraction"
+  authors:
+    - author: Jiazhen Lin#
+    - author: Youmin Chen
+    - author: Shiwei Gao
+    - author: Youyou Lu
+  equal: Youmin Chen
+  pubname: The 30th ACM Symposium on Operating Systems Principles
+  pubnamebrief: SOSP'24
+  year: 2024
+  link: https://sigops.org/s/conferences/sosp/2024/
+  type: conference
+  highlight: 1
 
 - title: "Exploring the Asynchrony of Slow Memory Filesystem with EasyIO"
   authors:

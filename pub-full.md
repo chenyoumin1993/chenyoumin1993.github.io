@@ -6,7 +6,7 @@ permalink: /pub-full/
 
 [Selected Publication List Here](/pub/)
 
-(* indicates corresponding authors.)
+(* indicates corresponding authors, # indicates contributing equally)
 
 <h2>Conference Papers</h2>
 {% assign pubs = site.data.pub %}
@@ -26,12 +26,12 @@ permalink: /pub-full/
                 <div class="content">
                     <span style="font-weight: bold;">{{ pub.title }}</span><br>
                     {% for author in pub.authors %}
-                        {% if author.author == "Youmin Chen" %}
-                        <strong><font color="#000000">{{ author.author }}</font></strong>
-                            {% if author.author == pub.corresponding %}
-                                <font color="#000000">*</font>
-                            {% endif %}
-                            <font color="#000000">,</font>
+                        {% if author.author == "Youmin Chen" and author.author == pub.corresponding %}
+                            <strong><font color="#000000">{{ author.author }}*,</font></strong>
+                        {% elseif author.author == "Youmin Chen" and author.author == pub.corresponding %}
+                            <strong><font color="#000000">{{ author.author }}#,</font></strong>
+                        {% elseif author.author == "Youmin Chen" %}
+                            <strong><font color="#000000">{{ author.author }},</font></strong>
                         {% else %}
                             <font color="#888888">{{ author.author }},</font> 
                         {% endif %}
