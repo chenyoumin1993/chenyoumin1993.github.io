@@ -28,7 +28,7 @@ permalink: /pub-full/
                     {% for author in pub.authors %}
                         {% if author.author == "Youmin Chen" and author.author == pub.corresponding %}
                             <strong><font color="#000000">{{ author.author }}*,</font></strong>
-                        {% elsif author.author == "Youmin Chen" and author.author == pub.corresponding %}
+                        {% elsif author.author == "Youmin Chen" and author.author == pub.equal %}
                             <strong><font color="#000000">{{ author.author }}#,</font></strong>
                         {% elsif author.author == "Youmin Chen" %}
                             <strong><font color="#000000">{{ author.author }},</font></strong>
