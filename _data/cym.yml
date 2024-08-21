@@ -1,5 +1,6 @@
 # Describe your recent news
 news:
+  - title: Aug, 2024, HCache (fast state restoration in LLM serving) has been accepted to EuroSys'25.
   - title: Aug, 2024, Vessel (a pure userspace process abstraction) has been accepted to SOSP'24.
   - title: July, 2024, I will join SJTU as Tenure-Track Associate Professor.
   - title: Sept, 2023, Our paper (EasyIO)  has been accepted to EuroSys'24.

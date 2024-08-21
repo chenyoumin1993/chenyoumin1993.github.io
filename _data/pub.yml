@@ -61,6 +61,19 @@
 #   # link: https://2024.eurosys.org/
 #   # type: conference
 #   highlight: 3
+
+- title: "Fast State Restoration in LLM Serving with HCache"
+  authors:
+    - author: Shiwei Gao
+    - author: Youmin Chen
+    - author: Jiwu Shu
+  pubname: The 20th European Conference on Computer Systems
+  pubnamebrief: EuroSys'25
+  year: 2025
+  link: https://2025.eurosys.org/
+  type: conference
+  highlight: 1
+
 - title: "Fast Core Scheduling with Userspace Process Abstraction"
   authors:
     - author: Jiazhen Lin#
