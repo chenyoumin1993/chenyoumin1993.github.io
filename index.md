@@ -5,8 +5,8 @@ layout: home
 <h2>About Me</h2>
 
 <!-- <div style="text-align: justify;"> -->
-I am a Postdoctoral Researcher with [the Department of Computer Science and Technology](https://www.cs.tsinghua.edu.cn/csen/), 
-[Tsinghua University](https://www.tsinghua.edu.cn/en/).
+I am a tenure-track associate professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 
+[Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/). I am also a member of [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
 I build fast and robust next-gen data and storage systems with the generic goal of 
 high device bandwidth utilization, low CPU cost, and high and predictable performance.
 I also aim to leverage my expertise to construct innovative systems tailored to broader contexts, 
@@ -18,8 +18,8 @@ I obtained my Ph.D. degree from Tsinghua University (advised by [Jiwu Shu](http:
 and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor
 degree from [Honors College (formerly School of Advanced 
 Engineering)](http://hc.buaa.edu.cn/), [Beihang University](http://www.buaa.edu.cn).
-During 2019 - 2020, I worked as a 
-visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison, 
+I worked as a postdoctoral researcher at Tsinghua University from 2021 to 2024, and as a 
+visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison from 2019 to 2020,  
 advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and 
 [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 

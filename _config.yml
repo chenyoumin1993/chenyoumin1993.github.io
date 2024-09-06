@@ -6,13 +6,13 @@ course_semester: "Fall 1998"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://chenyoumin1993.github.io/" # the base hostname & protocol for your site
 
-schoolname: "Tsinghua University"
-schoolurl: "https://www.tsinghua.edu.cn"
+schoolname: "Shanghai Jiao Tong University"
+schoolurl: "https://www.sjtu.edu.cn/"
 github_username: chenyoumin1993 
 
 address: |
-    F5, Ziqiang Science and Technology Building, Tsinghua University.
-    Beijing
+    SEIEE Building 3-524, Shanghai Jiao Tong University,
+    800 Dongchuan R.D., Minhang, Shanghai 200240,
     China
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
