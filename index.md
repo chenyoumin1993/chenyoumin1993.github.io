@@ -6,7 +6,7 @@ layout: home
 
 <!-- <div style="text-align: justify;"> -->
 I am a tenure-track associate professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 
-[Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/). I am also a member of [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
+[Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/). I am also a member of the [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
 I build fast and robust next-gen data and storage systems with the generic goal of 
 high device bandwidth utilization, low CPU cost, and high and predictable performance.
 I also aim to leverage my expertise to construct innovative systems tailored to broader contexts, 
