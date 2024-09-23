@@ -11,7 +11,7 @@ I build fast and robust next-gen data and storage systems with the generic goal 
 high device bandwidth utilization, low CPU cost, and high and predictable performance.
 I also aim to leverage my expertise to construct innovative systems tailored to broader contexts, 
 such as memory disaggregation and AI storage.
-My work has appeared at top systems venues such as FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
+My work has appeared at top systems venues such as FAST, SOSP, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
 <!-- </div> -->
 
 I obtained my Ph.D. degree from Tsinghua University (advised by [Jiwu Shu](http://storage.cs.tsinghua.edu.cn/~jiwu-shu) 
@@ -23,7 +23,7 @@ visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison from 
 advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and 
 [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 
-<p style="color: #c00000; font-weight: bold;">I am currently seeking PhD students/undergrad interns to work on storage systems, operating systems, and interactions between AI and systems. 
+<p style="color: #c00000; font-weight: bold;">I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. 
     If you are interested, please refer to the <a href="/static_files/recruitment.pdf" style="text-decoration: underline; color: blue;">details</a> and don't hesitate to reach out via email.</p>
 
 
