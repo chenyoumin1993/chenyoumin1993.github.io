@@ -1,3 +1,17 @@
+- title: "Medusa: Accelerating Serverless LLM Inference with Materialization"
+  authors:
+    - author: Shaoxun Zeng
+    - author: Minhui Xie
+    - author: Shiwei Gao
+    - author: Youmin Chen
+    - author: Youyou Lu
+  pubname: the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+  pubnamebrief: ASPLOS'25
+  year: 2025
+  link: https://www.asplos-conference.org/asplos2025/
+  type: conference
+  highlight: 1
+
 - title: "Fast State Restoration in LLM Serving with HCache"
   authors:
     - author: Shiwei Gao
