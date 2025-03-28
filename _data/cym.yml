@@ -20,6 +20,15 @@ news:
   - title: Mar, 2019. I will join UW-Madison to work as a visiting student researcher in this fall, advised by Remzi H. Arpaci-Dusseau (conditional).
   - title: Dec, 2018. Our paper "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing" has been accepted to Eurosys'19.
 
+stu:
+  - title: Xin Fan (PhD, start in 2025)
+  - title: Hangyu Zhou (Master, start in 2024)
+  - title: Yihao Shao (Master, start in 2024, w/ Prof. Linpeng Huang)
+  - title: Hangyu Zhou (Master, start in 2025)
+
+teach:
+  - title: 2025 Spring, CS1501: Programming - Ideas and Methods (C++)
+  
 # Describe the honors you have before.
 honors:
   - title: CCF Outstanding Doctoral Dissertation Award, 2021. 
@@ -35,13 +44,14 @@ honors:
   # - title: Run Corporation Scholarship, Beihang University, 2015.
   # - title: Second Prize Scholarship for Freshman in Beihang University, 2012.
 
-talks:
-  - title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System, Santa Clara, 2017"
-  - title: "Log-Structured Non-Volatile Memory, UCSD, 2019"
-  - title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System, UCSD, 2019"
-  - title: "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing, Dresden, Germany, 2019."
+# talks:
+#   - title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System, Santa Clara, 2017"
+#   - title: "Log-Structured Non-Volatile Memory, UCSD, 2019"
+#   - title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System, UCSD, 2019"
+#   - title: "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing, Dresden, Germany, 2019."
 
 services:
+  - title: 2025 - TPC member of USENIX ATC'25
   - title: 2024 - External Reviewer Committee (ERC) of USENIX ATC'24
   - title: 2023 - Program Co-Chair of the 25th ChinaSys Workshop
   - title: 2022 - Youth Executive Committee Member of ACM ChinaSys
