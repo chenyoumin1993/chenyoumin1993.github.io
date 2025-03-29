@@ -34,7 +34,7 @@
   pubname: The 30th ACM Symposium on Operating Systems Principles
   pubnamebrief: SOSP'24
   year: 2024
-  link: https://sigops.org/s/conferences/sosp/2024/
+  link: /papers/sosp24-vessel.pdf
   type: conference
   highlight: 1
 
@@ -64,7 +64,7 @@
   pubname: The 21st USENIX Conference on File and Storage Technologies 
   pubnamebrief: FAST'23
   year: 2023
-  link: /papers/fast24-yang-zhe.pdf
+  link: /papers/fast23-yang-zhe.pdf
   code: https://github.com/thustorage/lambda-io
   type: conference
   highlight: 1

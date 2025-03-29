@@ -24,9 +24,9 @@ advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and
 [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 
 <p style="color: #c00000; font-weight: bold;">I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. 
-    If you are interested, please refer to the <a href="/static_files/recruitment_v2.pdf" style="text-decoration: underline; color: blue;">details</a> and don't hesitate to reach out via email.</p>
+    If you are interested, please refer to the <a href="/static_files/recruitment_v3.pdf" style="text-decoration: underline; color: blue;">details</a> and don't hesitate to reach out via email.</p>
 
-<p style="color: #c00000; font-weight: bold;">NEWS!!! 招收2026年入学的硕/博士生，如果你对存储系统、操作系统、AI系统等相关领域感兴趣，欢迎与我联系，详情请参考<a href="/static_files/recruitment_v2.pdf" style="text-decoration: underline; color: blue;">链接</a>。</p>
+<p style="color: #c00000; font-weight: bold;">NEWS!!! 招收2026年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考<a href="/static_files/recruitment_v3.pdf" style="text-decoration: underline; color: blue;">链接</a>。</p>
     
 <p style="color: #c00000; font-weight: bold;">欢迎本校大二/大三本科生加入课题组开展科研工作，方式包括但不限于PRP项目、毕业设计等。</p>
 

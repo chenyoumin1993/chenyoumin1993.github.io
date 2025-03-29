@@ -12,5 +12,5 @@ items:
   icon_class: fas fa-book-reader
 
 - url: /misc/
-  name: Miscellaneous
+  name: Misc
   icon_class: fas fa-user-graduate

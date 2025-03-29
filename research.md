@@ -1,10 +1,10 @@
 ---
 layout: research
-title: Research
+title: Current Research Focus
 permalink: /research/
 ---
 
-<div style="text-align: justify">
+<!-- <div style="text-align: justify">
 With the burgeoning demand for real-time data processing, the imperative to construct large-scale memory storage systems 
 has become paramount. In light of this, the data center infrastructure is actively exploring innovative storage and network 
 technologies, exemplified by byte-addressable non-volatile memory from Intel (e.g., Optane) and Samsung (CMM-H), and high-speed 
@@ -15,38 +15,42 @@ RDMA interconnections.
 My research focus on developing efficient and robust next-generation storage systems utilizing these 
 new hardware devices. I follow three fundamental design principles – CPU-awareness, device-awareness, and workload-awareness – 
 essential for achieving optimal device bandwidth utilization, minimal CPU overhead, and predictable high performance. 
-</div>
+</div> -->
 
-<h2>Networked Memory Architecture</h2>
 
-2017 - 2020
+<h3>Operating System Design for Disaggregated Memory Architecture </h3>
+
+- an asynchronous IO engine to hide DM's high access latency ([EasyIO[EuroSys'24]](/papers/eurosys24-easyio.pdf)) 
+- a pure userspace process abstraction to enforce accurate memory bandwidth allocation ([Vessel[SOSP'24]](/papers/sosp24-vessel.pdf))
+
+<h3>(Storage) Systems Support for Large Language Models </h3>
+
+- KV Cache management for LLM inference ([HCache[EuroSys'25](/papers/eurosys25-hcache.pdf)])
+- Serverless LLM cold start optimization ([Medusa[ASPLOS'25]]())
+
+### Past Research Directions
+
+#### Networked Memory Architecture (2017 - 2020)
 
 As the storage and network technologies evolve rapidly, the CPU performance remains comparatively
 stagnant as Moore's law slows in the past years. Due to this reason, the CPU running with the
 heavy-weight storage software can easily become the bottleneck. We tackle this problem from various aspects.
 
-- In the OS level, we break the common wisdom of strict separation of user and kernel spaces by introducing the
-kernel-userspace collaboration architecture ([Kuco[FAST'21]](/papers/fast21-kucofs.pdf)), which enables direct storage access with minimal software
-overhead. 
-- We also extend the use of NVM in distributed environment by introducing RDMA-enabled
-persistent distributed shared memory (or pDSM) to eliminate redundant memory copies ([Octopus[USENIX ATC'17, TOS'20]](/papers/atc17-octopus.pdf)).
+- A kernel-user space collaborative architecture for scalable filesystem designs ([Kuco[FAST'21]](/papers/fast21-kucofs.pdf)) 
+- RDMA-enabled distributed persistent shared memory (or DPSM) ([Octopus[USENIX ATC'17, TOS'20]](/papers/atc17-octopus.pdf)).
+- RDMA-based RPC system with scalability and reliablity ([ScaleRPC[EuroSys'19]](/papers/eurosys19-scalerpc.pdf))
 
-
-<h2>CPU-efficient IO Engine</h2>
-
-2020 - 2024
+#### CPU-efficient IO Engine (2020 - 2024)
 
 Purely reducing the overhead of storage software is still not enough; system designers must be
 also device-aware since the emerging hardware typically exhibits bizarre performance behavior. For example,
-NVM has asymmetric read/write performance, device-level IO amplification, and performance variability;
-RDMA shows limited scalability due to the device-level cache thrashing. In this context, I have designed: 
-- an asynchronous IO framework to hide NVM's high access latency ([EasyIO[EuroSys'24]](/papers/eurosys24-easyio.pdf)) 
+non-volatile storage devices have asymmetric read/write performance, device-level IO amplification, and performance variability; in this context, we designed: 
+- a holistic IO stack design for computational storage devices ([$\lambda$-IO](/papers/fast23-yang-zhe.pdf))
 - a key-value store that uses compacted log to mitigate the IO amplification ([FlatStore[ASPLOS'20]](/papers/asplos20-flatstore.pdf)) 
-- and an RPC system to enable RDMA to work at a larger scale ([ScaleRPC[EuroSys'19]](/papers/eurosys19-scalerpc.pdf))
 
-<h2>Low Tail Latency Concurrency Control</h2>
+#### Low Tail Latency Concurrency Control (2020 - 2024)
 
-2020 - 2024
+
 
 Apart from seeking higher throughput and lower latency, datacenter applications also
 require their performance to be predictable (often defined as 99th or 99.9th percentile latencies). Latency
