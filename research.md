@@ -18,23 +18,20 @@ essential for achieving optimal device bandwidth utilization, minimal CPU overhe
 </div> -->
 
 
-### Operating System Design for Disaggregated Memory Architecture
+**Operating System Design for Disaggregated Memory Architecture**
 
 - an asynchronous IO engine to hide DM's high access latency ([EasyIO[EuroSys'24]](/papers/eurosys24-easyio.pdf)) 
 - a pure userspace process abstraction to enforce accurate memory bandwidth allocation ([Vessel[SOSP'24]](/papers/sosp24-vessel.pdf))
 
-### (Storage) Systems Support for Large Language Models
+**(Storage) Systems Support for Large Language Models**
 
 - KV Cache management for LLM inference ([HCache[EuroSys'25](/papers/eurosys25-hcache.pdf)])
 - Serverless LLM cold start optimization ([Medusa[ASPLOS'25]]())
 
----
 
-<header class="post-header">
-    <h1 class="post-title">Past Research Directions</h1>
-</header>
+## Past Research Directions
 
-### Networked Memory Architecture (2017 - 2020)
+**Networked Memory Architecture** (2017 - 2020)
 
 As the storage and network technologies evolve rapidly, the CPU performance remains comparatively
 stagnant as Moore's law slows in the past years. Due to this reason, the CPU running with the
@@ -44,7 +41,7 @@ heavy-weight storage software can easily become the bottleneck. We tackle this p
 - RDMA-enabled distributed persistent shared memory (or DPSM) ([Octopus[USENIX ATC'17, TOS'20]](/papers/atc17-octopus.pdf)).
 - RDMA-based RPC system with scalability and reliablity ([ScaleRPC[EuroSys'19]](/papers/eurosys19-scalerpc.pdf))
 
-### CPU-efficient IO Engine (2020 - 2024)
+**CPU-efficient IO Engine** (2020 - 2024)
 
 Purely reducing the overhead of storage software is still not enough; system designers must be
 also device-aware since the emerging hardware typically exhibits bizarre performance behavior. For example,
@@ -52,7 +49,7 @@ non-volatile storage devices have asymmetric read/write performance, device-leve
 - a holistic IO stack design for computational storage devices ([$\lambda$-IO](/papers/fast23-yang-zhe.pdf))
 - a key-value store that uses compacted log to mitigate the IO amplification ([FlatStore[ASPLOS'20]](/papers/asplos20-flatstore.pdf)) 
 
-### Low Tail Latency Concurrency Control (2020 - 2024)
+**Low Tail Latency Concurrency Control** (2020 - 2024)
 
 
 
