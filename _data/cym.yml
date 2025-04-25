@@ -1,5 +1,6 @@
 # Describe your recent news
 news:
+  - title: April, 2025, Our paper (crash consistency test of Open CAS) has been accepted to USENIX ATC'25.
   - title: Nov, 2024, Invited to serve in the TPC for USENIX ATC 2025.
   - title: Oct, 2024, Medusa (serverless LLM serving with state materialization) has been accepted to ASPLOS'25.
   - title: Aug, 2024, HCache (fast state restoration in LLM serving) has been accepted to EuroSys'25.

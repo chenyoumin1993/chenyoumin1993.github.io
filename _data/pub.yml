@@ -1,3 +1,15 @@
+- title: "Crash Consistency in Block-Level Caching Systems: An Open CAS  Case Study"
+  authors:
+    - author: Shaohua Duan
+    - author: Youmin Chen
+  corresponding: Youmin Chen
+  pubname: The 2025 USENIX Annual Technical Conference
+  pubnamebrief: USENIX ATC'25
+  year: 2025
+  link: https://www.usenix.org/conference/atc25
+  type: conference
+  highlight: 1
+
 - title: "Medusa: Accelerating Serverless LLM Inference with Materialization"
   authors:
     - author: Shaoxun Zeng
