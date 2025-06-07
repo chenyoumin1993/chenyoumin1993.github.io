@@ -31,7 +31,7 @@ permalink: /misc/
                 {% endif %}
                 <p>Start in {{ins.year}}, {{ins.type}}</p>
             </div>
-            {% increment counter %}
+            {% assign counter = counter + 1 %}
               {% if counter == 4 %}
                 {% assign counter = 0 %}
                 <br />
