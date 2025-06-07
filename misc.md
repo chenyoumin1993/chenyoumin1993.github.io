@@ -18,10 +18,13 @@ permalink: /misc/
             <p>{{site.data.people.instructor.name}}</p>
         </div> -->
 
-        <div class="profile-pic-gallary" style="float: left">
+        <div class="profile-pic-gallary">
             <h2>Current Students</h2>
             {% assign counter = 0 %}
             {% for ins in site.data.cym.students %}
+              {% if counter == 0 %}
+                <div>
+              {% endif %}
             <div class="image--cover-container" style="width:20%; float: left">
                 <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
                 {% if ins.webpage %}
@@ -34,7 +37,7 @@ permalink: /misc/
             {% assign counter = counter | plus: 1 %}
               {% if counter == 4 %}
                 {% assign counter = 0 %}
-                <br />
+                </div>
               {% endif %}
             {% endfor %}
         </div>
