@@ -10,21 +10,15 @@ permalink: /misc/
 {% endfor %}
 </ul> -->
 
-<div>
-    <div style="width:100%; float: left">
-      <!-- <h2>Instructors</h2> -->
-      <!-- <div class="image--cover-container">
-          <img src="{{site.data.people.instructor.profile_pic | prepend: site.baseurl }}" class="image--cover">
-          <p>{{site.data.people.instructor.name}}</p>
-      </div> -->
-      
+<div class="container mt-4">
       <h2>Current Students</h2>
+
       {% assign counter = 0 %}
       {% for ins in site.data.cym.students %}
         {% if counter == 0 %}
-          <div class="profile-pic-gallary">
+          <div class="row">
         {% endif %}
-      <div class="image--cover-container" style="width:20%; float: left">
+      <div class="image--cover-container col-md-3">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
           {% if ins.webpage %}
           <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
@@ -39,7 +33,6 @@ permalink: /misc/
           </div>
         {% endif %}
       {% endfor %}
-    </div>
 </div>
 
 <h2>Teaching</h2>
