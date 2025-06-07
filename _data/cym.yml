@@ -28,6 +28,38 @@ stu:
   - title: Yufei Hu (Master, start in 2025)
   - title: Daojun Dong (Master, start in 2025)
 
+students:
+  - name: Hangyu Zhou
+    year: 2024
+    type: Master
+    profile_pic: /_images/pp/zhy.jpg
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Yihao Shao
+    year: 2024
+    type: Master (co-advised)
+    profile_pic: /_images/pp/syh.jpg
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Wenhao Zhang
+    year: 2024
+    type: Master
+    profile_pic: /_images/pp/potter.jpg
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Xin Fan
+    year: 2025
+    type: PhD
+    profile_pic: /_images/pp/fx.jpg
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Yufei Hu
+    year: 2025
+    type: Master
+    profile_pic: /_images/pp/potter.jpg
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Daojun Dong
+    year: 2025
+    type: Master
+    profile_pic: /_images/pp/potter.jpg
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+
 teach:
   - title: CS1501 (C++ Programming - Ideas and Methods)
   

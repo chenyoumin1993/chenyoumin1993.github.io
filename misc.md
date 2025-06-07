@@ -10,6 +10,31 @@ permalink: /misc/
 {% endfor %}
 </ul>
 
+<div>
+    <div style="width:100%; float: left">
+        <!-- <h2>Instructors</h2> -->
+        <!-- <div class="image--cover-container">
+            <img src="{{site.data.people.instructor.profile_pic | prepend: site.baseurl }}" class="image--cover">
+            <p>{{site.data.people.instructor.name}}</p>
+        </div> -->
+
+        <div class="profile-pic-gallary ">
+            <h2>Current Students</h2>
+            {% for ins in site.data.cym.students %}
+            <div class="image--cover-container">
+                <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
+                {% if ins.webpage %}
+                <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
+                {% else %}
+                <p>{{ins.name}}</p>
+                {% endif %}
+                <p>Start in {{ins.year}}, {{ins.type}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 <h2>Teaching</h2>
 <ul style="overflow: hidden">
 {% for teach in site.data.cym.teach %}
