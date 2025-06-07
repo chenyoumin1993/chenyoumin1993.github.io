@@ -3,12 +3,12 @@ layout: default
 title: Full Publication List
 permalink: /misc/
 ---
-<h2>Current Students</h2>
+<!-- <h2>Current Students</h2>
 <ul style="overflow: hidden">
 {% for stu in site.data.cym.stu %}
   <li>{{ stu.title }}</li>
 {% endfor %}
-</ul>
+</ul> -->
 
 <div>
     <div style="width:100%; float: left">
@@ -21,7 +21,7 @@ permalink: /misc/
         <div class="profile-pic-gallary ">
             <h2>Current Students</h2>
             {% for ins in site.data.cym.students %}
-            <div class="image--cover-container">
+            <div class="image--cover-container" style="width:25%; float: left">
                 <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
                 {% if ins.webpage %}
                 <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
