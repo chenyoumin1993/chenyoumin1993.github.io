@@ -20,6 +20,7 @@ permalink: /misc/
 
         <div class="profile-pic-gallary ">
             <h2>Current Students</h2>
+            {% assign counter = 0 %}
             {% for ins in site.data.cym.students %}
             <div class="image--cover-container" style="width:20%; float: left">
                 <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
@@ -30,6 +31,11 @@ permalink: /misc/
                 {% endif %}
                 <p>Start in {{ins.year}}, {{ins.type}}</p>
             </div>
+            {% increment counter %}
+              {% if counter == 4 %}
+                {% assign counter = 0 %}
+                <br />
+              {% endif %}
             {% endfor %}
         </div>
     </div>
