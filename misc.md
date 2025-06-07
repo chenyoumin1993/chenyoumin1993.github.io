@@ -12,35 +12,33 @@ permalink: /misc/
 
 <div>
     <div style="width:100%; float: left">
-        <!-- <h2>Instructors</h2> -->
-        <!-- <div class="image--cover-container">
-            <img src="{{site.data.people.instructor.profile_pic | prepend: site.baseurl }}" class="image--cover">
-            <p>{{site.data.people.instructor.name}}</p>
-        </div> -->
-
-        <div class="profile-pic-gallary">
-            <h2>Current Students</h2>
-            {% assign counter = 0 %}
-            {% for ins in site.data.cym.students %}
-              {% if counter == 0 %}
-                <div>
-              {% endif %}
-            <div class="image--cover-container" style="width:20%; float: left">
-                <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
-                {% if ins.webpage %}
-                <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
-                {% else %}
-                <p>{{ins.name}}</p>
-                {% endif %}
-                <p>Start in {{ins.year}}, {{ins.type}}</p>
-            </div>
-            {% assign counter = counter | plus: 1 %}
-              {% if counter == 4 %}
-                {% assign counter = 0 %}
-                </div>
-              {% endif %}
-            {% endfor %}
-        </div>
+      <!-- <h2>Instructors</h2> -->
+      <!-- <div class="image--cover-container">
+          <img src="{{site.data.people.instructor.profile_pic | prepend: site.baseurl }}" class="image--cover">
+          <p>{{site.data.people.instructor.name}}</p>
+      </div> -->
+      
+      <h2>Current Students</h2>
+      {% assign counter = 0 %}
+      {% for ins in site.data.cym.students %}
+        {% if counter == 0 %}
+          <div class="profile-pic-gallary">
+        {% endif %}
+      <div class="image--cover-container" style="width:20%; float: left">
+          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
+          {% if ins.webpage %}
+          <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
+          {% else %}
+          <p>{{ins.name}}</p>
+          {% endif %}
+          <p>Start in {{ins.year}}, {{ins.type}}</p>
+      </div>
+      {% assign counter = counter | plus: 1 %}
+        {% if counter == 4 %}
+          {% assign counter = 0 %}
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
 </div>
 
