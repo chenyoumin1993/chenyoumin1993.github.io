@@ -18,7 +18,7 @@ permalink: /misc/
             <p>{{site.data.people.instructor.name}}</p>
         </div> -->
 
-        <div class="profile-pic-gallary ">
+        <div class="profile-pic-gallary" style="float: left">
             <h2>Current Students</h2>
             {% assign counter = 0 %}
             {% for ins in site.data.cym.students %}
