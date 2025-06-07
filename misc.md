@@ -21,7 +21,7 @@ permalink: /misc/
         <div class="profile-pic-gallary ">
             <h2>Current Students</h2>
             {% for ins in site.data.cym.students %}
-            <div class="image--cover-container" style="width:25%; float: left">
+            <div class="image--cover-container" style="width:20%; float: left">
                 <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
                 {% if ins.webpage %}
                 <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>

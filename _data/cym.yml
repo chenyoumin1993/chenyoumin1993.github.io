@@ -42,7 +42,7 @@ students:
   - name: Wenhao Zhang
     year: 2024
     type: Master
-    profile_pic: /_images/pp/potter.jpg
+    profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Xin Fan
     year: 2025
@@ -52,12 +52,12 @@ students:
   - name: Yufei Hu
     year: 2025
     type: Master
-    profile_pic: /_images/pp/potter.jpg
+    profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Daojun Dong
     year: 2025
     type: Master
-    profile_pic: /_images/pp/potter.jpg
+    profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
 
 teach:
