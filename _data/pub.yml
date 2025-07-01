@@ -6,7 +6,7 @@
   pubname: The 2025 USENIX Annual Technical Conference
   pubnamebrief: USENIX ATC'25
   year: 2025
-  link: https://www.usenix.org/conference/atc25
+  link: https://www.usenix.org/conference/atc25/presentation/duan-shaohua
   type: conference
   highlight: 1
 
@@ -20,7 +20,7 @@
   pubname: the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems
   pubnamebrief: ASPLOS'25
   year: 2025
-  link: https://www.asplos-conference.org/asplos2025/
+  link: /papers/asplos25-medusa.pdf
   type: conference
   highlight: 1
 
