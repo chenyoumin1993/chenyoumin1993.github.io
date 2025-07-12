@@ -1,3 +1,18 @@
+- title: "Rearchitecting the Thread Model of In-Memory Key-Value Stores with μTPS"
+  authors:
+    - author: Youmin Chen
+    - author: Jiwu Shu
+    - author: Yanyan Shen
+    - author: Linpeng Huang
+    - author: Hong Mei
+  corresponding: Youmin Chen
+  pubname: The 31st Symposium on Operating Systems Principles
+  pubnamebrief: SOSP'25
+  year: 2025
+  link: https://sigops.org/s/conferences/sosp/2025/
+  type: conference
+  highlight: 1
+
 - title: "Crash Consistency in Block-Level Caching Systems: An Open CAS  Case Study"
   authors:
     - author: Shaohua Duan

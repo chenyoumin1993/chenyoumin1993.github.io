@@ -19,9 +19,7 @@ and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor
 degree from [Honors College (formerly School of Advanced 
 Engineering)](http://hc.buaa.edu.cn/), [Beihang University](http://www.buaa.edu.cn).
 I worked as a postdoctoral researcher at Tsinghua University from 2021 to 2024, and as a 
-visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison from 2019 to 2020,  
-advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and 
-[Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
+visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison from 2019 to 2020, advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 
 <p style="color: #c00000; font-weight: bold;">I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. 
     If you are interested, please refer to the <a href="/static_files/recruitment_v3.pdf" style="text-decoration: underline; color: blue;">details</a> and don't hesitate to reach out via email.</p>
