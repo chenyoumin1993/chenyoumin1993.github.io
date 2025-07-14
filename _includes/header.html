@@ -11,10 +11,11 @@
           </td>
         </tr></table-->
  <div class="container">
+    <div class="row">
 	 <div class="col-sm-3">
 		 <span style="margin-top: -2px;margin-bottom: -10px;" class="site-title"><b><h3>Youmin Chen</h3></b></span>
 	 </div>
-    <div class="col-sm-9" style="align-items:right; text-align:right;">
+    <div class="col-sm-9 ml-auto">
     <nav class="site-nav">
 
       <a href="#" class="menu-icon menu.open">
@@ -25,16 +26,14 @@
         </svg>
       </a>  
 
-    <div class="trigger"><h1>Main Navigation</h1>
-
- {% include nav.html  %}
-
+     <div class="trigger"><h1>Main Navigation</h1>
+      {% include nav.html  %}
      </div>  
     </nav>
     </div>
     </div>
   </div>
-
+</div>
   <div class="header-texture" style="height:100%; z-index: 0; position: absolute; top:0; right: 0; left: 0; 
   background-image: url('{{ '/_images/pattern.png' | prepend: site.baseurl }}');" />
 
