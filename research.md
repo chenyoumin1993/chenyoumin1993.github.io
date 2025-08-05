@@ -19,7 +19,7 @@ essential for achieving optimal device bandwidth utilization, minimal CPU overhe
 
 
 **Storage &times; OS** --- New Abstraction
-
+- a new threading architecture for in-memory key-value store (&mu;TPS[[SOSP'25]](https://sigops.org/s/conferences/sosp/2025/))
 - a pure userspace process abstraction to enforce accurate memory bandwidth allocation (Vessel[[SOSP'24]](/papers/sosp24-vessel.pdf))
 - a holistic IO stack design for computational storage devices (&lambda;-IO[[FAST'23]](/papers/fast23-yang-zhe.pdf))
 
@@ -65,7 +65,7 @@ etc.), background activities, queuing, and others. In the past years, we have wi
 research work that improves performance predictability at different layers, but they ignore the fact that the
 workload is another source of incurring latency spikes due to request conflicts. Here, I take a much deeper dive
 to the concurrency protocol design with the workload-aware principle in mind. 
-- *coordinated concurrency control* for tree-based index structures (uTree[[VLDB'20]](/papers/vldb20-utree.pdf)) 
+- *coordinated concurrency control* for tree-based index structures (&mu;Tree[[VLDB'20]](/papers/vldb20-utree.pdf)) 
 - *pessimistic locking and opportunistic reading* for transactional systems (Plor[[SIGMOD'22]](/papers/sigmod22plor.pdf))
 
 <!-- <div class="home" style="font-size: 0.9em;">
