@@ -39,7 +39,7 @@ permalink: /pub/
                     {{ pub.pubname }} 
                     {% if pub.pubnamebrief %}<strong>({{ pub.pubnamebrief }})</strong>{% endif %}, 
                     {{ pub.year }}<br />
-                    {% if pub.tag %}<font color="#c00000">{{ pub.tag }}</font>{% endif %}
+                    {% if pub.tag %}<i><font color="#c00000">{{ pub.tag }}</font></i>{% endif %} <br />
                     <a href="{{ pub.link }}">PDF</a>
                 </div>
             </div>
