@@ -262,7 +262,7 @@
   type: conference
   slide: /slides/asplos20-slide-flatstore.pdf
   highlight: 1
-  tag: Appears in TOP-50 most-cited papers at ASPLOS in the past 5 years (Google Scholar Metrics)
+  tag: "Appears in TOP-50 most-cited papers at ASPLOS in the past 5 years (Google Scholar Metrics)"
 
 - title: "TH-DPMS: Design and Implementation of an RDMA-enabled Distributed Persistent Memory Storage System"
   authors:
@@ -338,7 +338,7 @@
   slide: /slides/eurosys19-slide-ScaleRPC.pdf
   type: conference
   highlight: 1
-  tag: Appears in TOP-50 most-cited papers at EuroSys in the past 5 years (Google Scholar Metrics)
+  tag: "Appears in TOP-50 most-cited papers at EuroSys in the past 5 years (Google Scholar Metrics)"
 
 
 - title: "基于RDMA的分布式存储系统研究综述"
@@ -403,4 +403,4 @@
   link: /papers/atc17-octopus.pdf
   type: conference
   highlight: 1
-  tag: Appears in TOP-50 most-cited papers at USENIX ATC in the past 5 years (Google Scholar Metrics)
+  tag: "Appears in TOP-50 most-cited papers at USENIX ATC in the past 5 years (Google Scholar Metrics)"
