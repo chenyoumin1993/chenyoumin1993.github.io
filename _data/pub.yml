@@ -24,6 +24,7 @@
   link: https://www.usenix.org/conference/atc25/presentation/duan-shaohua
   type: conference
   highlight: 1
+  tag: Invited for fast-tracked publication in ACM Transactions on Storage
 
 - title: "Medusa: Accelerating Serverless LLM Inference with Materialization"
   authors:
