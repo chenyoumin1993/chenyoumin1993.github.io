@@ -1,10 +1,8 @@
 ---
 layout: pub
 title: Selected Publications
-permalink: /pub/
+permalink: /pub-bak/
 ---
-
-[Full Publication List Here](/pub-full/)
 
 (* indicates corresponding authors, # indicates contributing equally)
 
