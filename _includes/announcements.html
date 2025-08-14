@@ -1,21 +1,23 @@
-<button type="button" class="btn btn-link" data-toggle="collapse" 
-		data-target="#demo">
-	More News
-</button>
 <div class="announcement-box" style="margin-top:30px">
     <h2>News</h2>
     <ul>
         {% for news in site.data.cym.news limit: 5 %}
-        <li class="no-p-margin">
-            {{ news.title }}
-        </li> 
-        <div id="demo" class="collapse in">
-            {% endfor %}
-            {% for news in site.data.cym.news offset:5 %}
-            <li>{{ news.title }}</li>
-            {% endfor %}
-        </div>
+        <li class="no-p-margin">{{ news.title }}</li>
+        {% endfor %}
     </ul>
+
+    <button type="button" class="btn btn-link" data-toggle="collapse" 
+    data-target="#demo">
+    More News
+    </button>
+
+    <div id="demo" class="collapse in">
+        <ul>
+            {% for news in site.data.cym.news offset: 5 %}
+            <li class="no-p-margin">{{ news.title }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 
 <!-- {% assign all_events = site.events | concat: site.lectures %}
