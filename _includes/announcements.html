@@ -5,19 +5,6 @@
         <li class="no-p-margin">{{ news.title }}</li>
         {% endfor %}
     </ul>
-
-    <button type="button" class="btn btn-link" data-toggle="collapse" 
-    data-target="#demo">
-    More News
-    </button>
-
-    <div id="demo" class="collapse in">
-        <ul>
-            {% for news in site.data.cym.news offset: 5 %}
-            <li class="no-p-margin">{{ news.title }}</li>
-            {% endfor %}
-        </ul>
-    </div>
 </div>
 
 <!-- {% assign all_events = site.events | concat: site.lectures %}
