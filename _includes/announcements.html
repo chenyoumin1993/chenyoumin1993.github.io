@@ -1,3 +1,7 @@
+<button type="button" class="btn btn-link" data-toggle="collapse" 
+		data-target="#demo">
+	More News
+</button>
 <div class="announcement-box" style="margin-top:30px">
     <h2>News</h2>
     <ul>
@@ -5,7 +9,12 @@
         <li class="no-p-margin">
             {{ news.title }}
         </li> 
-        {% endfor %}
+        <div id="demo" class="collapse in">
+            {% endfor %}
+            {% for news in site.data.cym.news offset:5 %}
+            <li>{{ news.title }}</li>
+            {% endfor %}
+        </div>
     </ul>
 </div>
 
