@@ -11,20 +11,15 @@ I build fast and robust next-gen data and storage systems.
 My work has appeared at top systems venues such as SOSP, FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
 My current research interests lie at the intersection of storage systems and the following three disciplines:
 
-- **Storage &times; OS**: Developing **new abstractions** at the operating system level to improve flexibility, programmability, and schedulability.
+- **Storage &times; OS**: **New abstractions** at the OS level to improve flexibility, programmability, and schedulability.
 
-- **Storage &times; H/W**: Designing **new systems** that enable faster and more efficient interactions between emerging hardware and storage software.
+- **Storage &times; H/W**: **New systems** that enable faster interactions between emerging hardware and storage software.
 
-- **Storage &times; AI**: Exploring **new applications** (e.g., large language models) through algorithm–storage co-design.
+- **Storage &times; AI**: **New applications** (e.g., large language models) through algorithm–storage co-design.
 
-
-
-I obtained my Ph.D. degree from Tsinghua University (advised by [Jiwu Shu](http://storage.cs.tsinghua.edu.cn/~jiwu-shu) 
-and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor
-degree from [Honors College (formerly School of Advanced 
-Engineering)](http://hc.buaa.edu.cn/), [Beihang University](http://www.buaa.edu.cn).
-I worked as a postdoctoral researcher at Tsinghua University from 2021 to 2024, and as a 
-visiting scholar at [ADSL](https://research.cs.wisc.edu/adsl/), UW-Madison from 2019 to 2020, advised by Prof. [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
+I received my Ph.D. degree in Computer Science from Tsinghua University, advised by ([Jiwu Shu](http://storage.cs.tsinghua.edu.cn/~jiwu-shu) 
+and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor’s degree from [Honors College (formerly School of Advanced 
+Engineering)](http://hc.buaa.edu.cn/), at [Beihang University](http://www.buaa.edu.cn). From 2021 to 2024, I was a postdoctoral researcher at Tsinghua University. Earlier, from 2019 to 2020, I was a visiting scholar in the ADSL lab at the University of Wisconsin–Madison, working with Professors [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
 
 
 <p style="color: #c00000; font-weight: bold;">I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. 
