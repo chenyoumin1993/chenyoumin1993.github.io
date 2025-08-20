@@ -11,7 +11,7 @@ I build fast and robust next-gen data and storage systems.
 My work has appeared at top systems venues such as SOSP, FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
 My current research interests lie at the intersection of storage systems and the following three disciplines:
 
-- **Storage &times; OS**: **New abstractions** at the OS level to improve flexibility, programmability, and schedulability.
+- **Storage &times; OS**: **New abstractions** at the OS level with enhanced flexibility, programmability, and schedulability.
 
 - **Storage &times; H/W**: **New systems** that enable faster interactions between emerging hardware and storage software.
 
@@ -25,9 +25,9 @@ Engineering)](http://hc.buaa.edu.cn/), at [Beihang University](http://www.buaa.e
 <p style="color: #c00000; font-weight: bold;">I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. 
     If you are interested, please refer to the <a href="/static_files/recruitment_v3.pdf" style="text-decoration: underline; color: blue;">details</a> and don't hesitate to reach out via email.</p>
 
-<p style="color: #c00000; font-weight: bold;">NEWS!!! 招收2026年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考<a href="/static_files/recruitment_v3.pdf" style="text-decoration: underline; color: blue;">链接</a>。</p>
+<p style="color: #c00000; font-weight: bold;">NEWS!!! 招收2026/2027年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考<a href="/static_files/recruitment_v3.pdf" style="text-decoration: underline; color: blue;">链接</a>。</p>
     
-<p style="color: #c00000; font-weight: bold;">欢迎本校大二/大三本科生加入课题组开展科研工作，方式包括但不限于PRP项目、毕业设计等。</p>
+<p style="color: #c00000; font-weight: bold;">长期有效：欢迎本校大二/大三本科生加入课题组开展科研工作，方式包括但不限于PRP项目、毕业设计等。</p>
 
 
 <div class="row">
