@@ -7,11 +7,15 @@ layout: home
 
 I am a tenure-track associate professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 
 [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/). I am also a member of the [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
-I build fast and robust next-gen data and storage systems with the generic goal of 
-high device bandwidth utilization, low CPU cost, and high and predictable performance.
-I also aim to leverage my expertise to construct innovative systems tailored to broader contexts, 
-such as memory disaggregation and AI storage.
-My work has appeared at top systems venues such as FAST, SOSP, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
+I build fast and robust next-gen data and storage systems.
+My work has appeared at top systems venues such as SOSP, FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
+My current research interests lie at the intersection of storage systems and the following three disciplines:
+
+- **Storage &times; OS**: Developing **new abstractions** at the operating system level to improve flexibility, programmability, and schedulability.
+
+- **Storage &times; H/W**: Designing **new systems** that enable faster and more efficient interactions between emerging hardware and storage software.
+
+- **Storage &times; AI**: Exploring **new applications** (e.g., large language models) through algorithm–storage co-design.
 
 
 
