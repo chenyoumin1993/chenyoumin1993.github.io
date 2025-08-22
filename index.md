@@ -11,11 +11,11 @@ I build fast and robust next-gen data and storage systems.
 My work has appeared at top systems venues such as SOSP, FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
 My current research interests lie at the intersection of storage systems and the following three disciplines:
 
-- **Storage &times; OS**: **New abstractions** at the OS level with enhanced flexibility, programmability, and schedulability.
+**Storage &times; OS**: **New abstractions** at the OS level with enhanced flexibility, programmability, and schedulability.
 
-- **Storage &times; H/W**: **New systems** that enable faster interactions between emerging hardware and storage software.
+**Storage &times; H/W**: **New systems** with faster interactions between emerging hardware and storage software.
 
-- **Storage &times; AI**: **New applications** (e.g., large language models) through algorithm–storage co-design.
+**Storage &times; AI**: **New applications** (e.g., large language models) through algorithm–storage co-design.
 
 I received my Ph.D. degree in Computer Science from Tsinghua University, advised by ([Jiwu Shu](http://storage.cs.tsinghua.edu.cn/~jiwu-shu) 
 and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor’s degree from [Honors College (formerly School of Advanced 
