@@ -1,3 +1,17 @@
+- title: "StageWise: Accelerating Persistent Key-Value Stores by Thread Model Redesigning"
+  authors:
+    - author: Zeqi Li
+    - author: Youmin Chen
+    - author: Qing Wang
+    - author: Youyou Lu
+    - author: Jiwu Shu
+  pubname: IEEE Transactions on Computers
+  pubnamebrief: TC
+  year: 2025
+  link: 
+  type: journal
+  highlight: 2
+
 - title: "Rearchitecting the Thread Model of In-Memory Key-Value Stores with μTPS"
   authors:
     - author: Youmin Chen
