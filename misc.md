@@ -9,10 +9,9 @@ permalink: /misc/
   <li>{{ stu.title }}</li>
 {% endfor %}
 </ul> -->
+<h2>Current Students</h2>
 
 <div class="container mt-4">
-  <h2>Current Students</h2>
-
   <h4>Ph.D. Students</h4>
   {% assign counter = 0 %}
 
@@ -48,9 +47,11 @@ permalink: /misc/
   {% if counter > 0 %}
     </div>
   {% endif %}
+</div>
 
+
+<div class="container mt-4">
   <h4>Master Students</h4>
-  
   {% assign counter = 0 %}
 
   {% for ins in site.data.cym.students %}
@@ -85,7 +86,9 @@ permalink: /misc/
   {% if counter > 0 %}
     </div>
   {% endif %}
+</div>
 
+<div class="container mt-4">
   <h4>Undergraduate Students</h4>
 
   {% assign counter = 0 %}
