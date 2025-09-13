@@ -21,7 +21,7 @@ permalink: /misc/
     {% endif %}
 
       <div class="col-md-4 align-items-center text-center">
-          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="rounded w-75">
+          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="rounded w-50">
           {% if ins.webpage %}
           <p style="margin-top:0px;margin-bottom:0px"><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
           {% else %}
