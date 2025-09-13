@@ -21,22 +21,18 @@ permalink: /misc/
       <div class="row">
     {% endif %}
 
-    {% if ins.type == "PhD" %}
-
       <div class="col-md-4 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
           {% if ins.webpage %}
-          <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
+          <p style="margin-top:0px;margin-bottom:0px"><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
           {% else %}
-          <p>{{ins.name}}</p>
+          <p style="margin-top:0px;margin-bottom:0px">{{ins.name}}</p>
           {% endif %}
-          <p>Start in {{ins.year}} {{ins.tag}}</p>
-          <p>B.S. {{ins.bs}}</p>
+          <p style="margin-top:0px;margin-bottom:0px">Start in {{ins.year}} {{ins.tag}}</p>
+          <p style="margin-top:0px;margin-bottom:0px">B.S. {{ins.bs}}</p>
       </div>
 
       {% assign counter = counter | plus: 1 %}
-
-    {% endif %}
 
     {% if counter == 3 %}
       {% assign counter = 0 %}
@@ -50,81 +46,6 @@ permalink: /misc/
 </div>
 
 
-<div class="container mt-4">
-  <h4>Master Students</h4>
-  {% assign counter = 0 %}
-
-  {% for ins in site.data.cym.students %}
-    
-    {% if counter == 0 %}
-      <div class="row">
-    {% endif %}
-
-    {% if ins.type == "Master" %}
-
-      <div class="col-md-4 align-items-center text-center">
-          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
-          {% if ins.webpage %}
-          <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
-          {% else %}
-          <p>{{ins.name}}</p>
-          {% endif %}
-          <p>Start in {{ins.year}} {{ins.tag}}</p>
-          <p>B.S. {{ins.bs}}</p>
-      </div>
-
-      {% assign counter = counter | plus: 1 %}
-
-    {% endif %}
-
-    {% if counter == 3 %}
-      {% assign counter = 0 %}
-      </div>
-    {% endif %}
-  {% endfor %}
-
-  {% if counter > 0 %}
-    </div>
-  {% endif %}
-</div>
-
-<div class="container mt-4">
-  <h4>Undergraduate Students</h4>
-
-  {% assign counter = 0 %}
-
-  {% for ins in site.data.cym.students %}
-    
-    {% if counter == 0 %}
-      <div class="row">
-    {% endif %}
-
-    {% if ins.type == "Undergrad" %}
-
-      <div class="col-md-4 align-items-center text-center">
-          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
-          {% if ins.webpage %}
-          <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
-          {% else %}
-          <p>{{ins.name}}</p>
-          {% endif %}
-          <p>Joined in {{ins.year}}</p>
-      </div>
-
-      {% assign counter = counter | plus: 1 %}
-
-    {% endif %}
-
-    {% if counter == 3 %}
-      {% assign counter = 0 %}
-      </div>
-    {% endif %}
-  {% endfor %}
-
-  {% if counter > 0 %}
-    </div>
-  {% endif %}
-</div>
 
 <h2>Teaching</h2>
 <ul style="overflow: hidden">
