@@ -13,8 +13,7 @@ permalink: /misc/
 <div class="container mt-4">
   <h2>Current Students</h2>
 
-  <h3>Ph.D. Students</h3>
-  <hr>
+  <h4>Ph.D. Students</h4>
   {% assign counter = 0 %}
 
   {% for ins in site.data.cym.students %}
@@ -25,7 +24,7 @@ permalink: /misc/
 
     {% if ins.type == "PhD" %}
 
-      <div class="col-md-3 align-items-center text-center">
+      <div class="col-md-4 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
           {% if ins.webpage %}
           <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
@@ -40,7 +39,7 @@ permalink: /misc/
 
     {% endif %}
 
-    {% if counter == 4 %}
+    {% if counter == 3 %}
       {% assign counter = 0 %}
       </div>
     {% endif %}
@@ -50,8 +49,8 @@ permalink: /misc/
     </div>
   {% endif %}
 
-  <h3>Master Students</h3>
-  <hr>
+  <h4>Master Students</h4>
+  
   {% assign counter = 0 %}
 
   {% for ins in site.data.cym.students %}
@@ -62,7 +61,7 @@ permalink: /misc/
 
     {% if ins.type == "Master" %}
 
-      <div class="col-md-3 align-items-center text-center">
+      <div class="col-md-4 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
           {% if ins.webpage %}
           <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
@@ -77,7 +76,7 @@ permalink: /misc/
 
     {% endif %}
 
-    {% if counter == 4 %}
+    {% if counter == 3 %}
       {% assign counter = 0 %}
       </div>
     {% endif %}
@@ -87,8 +86,8 @@ permalink: /misc/
     </div>
   {% endif %}
 
-  <h3>Undergraduate Students</h3>
-  <hr>
+  <h4>Undergraduate Students</h4>
+
   {% assign counter = 0 %}
 
   {% for ins in site.data.cym.students %}
@@ -99,7 +98,7 @@ permalink: /misc/
 
     {% if ins.type == "Undergrad" %}
 
-      <div class="col-md-3 align-items-center text-center">
+      <div class="col-md-4 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
           {% if ins.webpage %}
           <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
@@ -113,12 +112,12 @@ permalink: /misc/
 
     {% endif %}
 
-    {% if counter == 4 %}
+    {% if counter == 3 %}
       {% assign counter = 0 %}
       </div>
     {% endif %}
   {% endfor %}
-  
+
   {% if counter > 0 %}
     </div>
   {% endif %}
