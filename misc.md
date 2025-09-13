@@ -21,13 +21,13 @@ permalink: /misc/
     {% endif %}
 
       <div class="col-md-4 align-items-center text-center">
-          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="img-thumbnail">
+          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="img-thumbnail w-75">
           {% if ins.webpage %}
           <p style="margin-top:0px;margin-bottom:0px"><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
           {% else %}
           <p style="margin-top:0px;margin-bottom:0px">{{ins.name}}</p>
           {% endif %}
-          <p style="margin-top:0px;margin-bottom:0px;line-height:1;">{{ins.type}}, Join(ed) in {{ins.year}} {{ins.tag}}, B.S. {{ins.bs}}</p>
+          <p style="margin-top:0px;margin-bottom:10px;line-height:1;">{{ins.type}}, Joined in {{ins.year}} {{ins.tag}}, B.S. {{ins.bs}}</p>
       </div>
 
       {% assign counter = counter | plus: 1 %}
