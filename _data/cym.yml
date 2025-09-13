@@ -34,43 +34,77 @@ students:
   - name: Hangyu Zhou
     year: 2024
     type: Master
+    bs: NUAA
     profile_pic: /_images/pp/zhy.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Yihao Shao
     year: 2024
-    type: Master (co-advised)
+    type: Master
+    bs: XMU
+    tag: (co-advised)
     profile_pic: /_images/pp/syh.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Wenhao Zhang
     year: 2024
     type: Master
+    bs: HUST
     profile_pic: /_images/pp/zwh.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Xin Fan
     year: 2025
     type: PhD
+    bs: WHU
     profile_pic: /_images/pp/fx.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Yufei Hu
     year: 2025
     type: Master
+    bs: HUST
     profile_pic: /_images/pp/hyf.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Daojun Dong
     year: 2025
     type: Master
+    bs: XJTU
     profile_pic: /_images/pp/ddj.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
-  - name: Yinglun Chai
+  - name: Minrui Tang
     year: 2025
-    type: Undergrad Intern
-    profile_pic: /_images/pp/default.png
+    type: PhD
+    bs: XJU
+    tag: (co-advised from XMU)
+    profile_pic: /_images/pp/tmr.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Xingkun Fan
+    year: 2026
+    type: PhD
+    bs: BUAA
+    profile_pic: /_images/pp/fxk.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Jincheng Cao
+    year: 2026
+    type: Master
+    bs: HIT (ShenZhen)
+    profile_pic: /_images/pp/cjc.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Peiyu He
+    year: 2026
+    type: Master
+    bs: SJTU
+    tag: (co-advised)
+    profile_pic: /_images/pp/hpy.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Xunuo Wang
     year: 2025
     type: Undergrad Intern
     profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Yinglun Chai
+    year: 2025
+    type: Undergrad Intern
+    profile_pic: /_images/pp/default.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+
 
 teach:
   - title: CS1501 (C++ Programming - Ideas and Methods)

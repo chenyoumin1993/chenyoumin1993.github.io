@@ -11,13 +11,20 @@ permalink: /misc/
 </ul> -->
 
 <div class="container mt-4">
-      <h2>Current Students</h2>
+  <h2>Current Students</h2>
 
-      {% assign counter = 0 %}
-      {% for ins in site.data.cym.students %}
-        {% if counter == 0 %}
-          <div class="row">
-        {% endif %}
+  <h3>Ph.D. Students</h3>
+  <hr>
+  {% assign counter = 0 %}
+
+  {% for ins in site.data.cym.students %}
+    
+    {% if counter == 0 %}
+      <div class="row">
+    {% endif %}
+
+    {% if ins.type == "PhD" %}
+
       <div class="col-md-3 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
           {% if ins.webpage %}
@@ -25,14 +32,84 @@ permalink: /misc/
           {% else %}
           <p>{{ins.name}}</p>
           {% endif %}
-          <p>Start in {{ins.year}}, {{ins.type}}</p>
+          <p>Start in {{ins.year}} {{ins.tag}}</p>
+          <p>B.S. {{ins.bs}}</p>
       </div>
+
       {% assign counter = counter | plus: 1 %}
-        {% if counter == 4 %}
-          {% assign counter = 0 %}
-          </div>
-        {% endif %}
-      {% endfor %}
+
+    {% endif %}
+
+    {% if counter == 4 %}
+      {% assign counter = 0 %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <h3>Master Students</h3>
+  <hr>
+  {% assign counter = 0 %}
+
+  {% for ins in site.data.cym.students %}
+    
+    {% if counter == 0 %}
+      <div class="row">
+    {% endif %}
+
+    {% if ins.type == "PhD" %}
+
+      <div class="col-md-3 align-items-center text-center">
+          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
+          {% if ins.webpage %}
+          <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
+          {% else %}
+          <p>{{ins.name}}</p>
+          {% endif %}
+          <p>Start in {{ins.year}} {{ins.tag}}</p>
+          <p>B.S. {{ins.bs}}</p>
+      </div>
+
+      {% assign counter = counter | plus: 1 %}
+
+    {% endif %}
+
+    {% if counter == 4 %}
+      {% assign counter = 0 %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <h3>Undergraduate Students</h3>
+  <hr>
+  {% assign counter = 0 %}
+
+  {% for ins in site.data.cym.students %}
+    
+    {% if counter == 0 %}
+      <div class="row">
+    {% endif %}
+
+    {% if ins.type == "PhD" %}
+
+      <div class="col-md-3 align-items-center text-center">
+          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
+          {% if ins.webpage %}
+          <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
+          {% else %}
+          <p>{{ins.name}}</p>
+          {% endif %}
+          <p>Joined in {{ins.year}}</p>
+      </div>
+
+      {% assign counter = counter | plus: 1 %}
+
+    {% endif %}
+
+    {% if counter == 4 %}
+      {% assign counter = 0 %}
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <h2>Teaching</h2>
