@@ -12,7 +12,6 @@ permalink: /misc/
 <h2>Current Students</h2>
 
 <div class="container mt-4">
-  <h4>Ph.D. Students</h4>
   {% assign counter = 0 %}
 
   {% for ins in site.data.cym.students %}
@@ -21,7 +20,7 @@ permalink: /misc/
       <div class="row">
     {% endif %}
 
-      <div class="col-md-4 align-items-center text-center">
+      <div class="col-md-3 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
           {% if ins.webpage %}
           <p style="margin-top:0px;margin-bottom:0px"><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
@@ -34,7 +33,7 @@ permalink: /misc/
 
       {% assign counter = counter | plus: 1 %}
 
-    {% if counter == 3 %}
+    {% if counter == 4 %}
       {% assign counter = 0 %}
       </div>
     {% endif %}
