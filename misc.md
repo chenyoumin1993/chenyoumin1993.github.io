@@ -20,20 +20,19 @@ permalink: /misc/
       <div class="row">
     {% endif %}
 
-      <div class="col-md-3 align-items-center text-center">
-          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
+      <div class="col-md-4 align-items-center text-center">
+          <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="img-thumbnail">
           {% if ins.webpage %}
           <p style="margin-top:0px;margin-bottom:0px"><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
           {% else %}
           <p style="margin-top:0px;margin-bottom:0px">{{ins.name}}</p>
           {% endif %}
-          <p style="margin-top:0px;margin-bottom:0px">Start in {{ins.year}} {{ins.tag}}</p>
-          <p style="margin-top:0px;margin-bottom:0px">B.S. {{ins.bs}}</p>
+          <p style="margin-top:0px;margin-bottom:0px;line-height:1;">{{ins.type}}, Join(ed) in {{ins.year}} {{ins.tag}}, B.S. {{ins.bs}}</p>
       </div>
 
       {% assign counter = counter | plus: 1 %}
 
-    {% if counter == 4 %}
+    {% if counter == 3 %}
       {% assign counter = 0 %}
       </div>
     {% endif %}
