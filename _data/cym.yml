@@ -72,7 +72,7 @@ students:
     year: 2025
     type: PhD
     bs: XJU
-    tag: (co-advised from XMU)
+    tag: (co-advised)
     profile_pic: /_images/pp/tmr.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Xingkun Fan
@@ -96,12 +96,12 @@ students:
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Xunuo Wang
     year: 2025
-    type: Undergrad Intern
+    type: Undergrad
     profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Yinglun Chai
     year: 2025
-    type: Undergrad Intern
+    type: Undergrad
     profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
 

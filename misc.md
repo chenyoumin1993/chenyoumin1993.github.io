@@ -46,6 +46,10 @@ permalink: /misc/
     {% endif %}
   {% endfor %}
 
+  {% if counter > 0 %}
+    </div>
+  {% endif %}
+
   <h3>Master Students</h3>
   <hr>
   {% assign counter = 0 %}
@@ -56,7 +60,7 @@ permalink: /misc/
       <div class="row">
     {% endif %}
 
-    {% if ins.type == "PhD" %}
+    {% if ins.type == "Master" %}
 
       <div class="col-md-3 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
@@ -79,6 +83,10 @@ permalink: /misc/
     {% endif %}
   {% endfor %}
 
+  {% if counter > 0 %}
+    </div>
+  {% endif %}
+
   <h3>Undergraduate Students</h3>
   <hr>
   {% assign counter = 0 %}
@@ -89,7 +97,7 @@ permalink: /misc/
       <div class="row">
     {% endif %}
 
-    {% if ins.type == "PhD" %}
+    {% if ins.type == "Undergrad" %}
 
       <div class="col-md-3 align-items-center text-center">
           <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
@@ -110,6 +118,10 @@ permalink: /misc/
       </div>
     {% endif %}
   {% endfor %}
+  
+  {% if counter > 0 %}
+    </div>
+  {% endif %}
 </div>
 
 <h2>Teaching</h2>
