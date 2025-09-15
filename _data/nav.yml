@@ -11,6 +11,10 @@ items:
   name: Publication
   icon_class: fas fa-book-reader
 
+- url: /team/
+  name: Team
+  icon_class: fas fa-user-graduate
+
 - url: /misc/
   name: Misc
   icon_class: fas fa-user-graduate
