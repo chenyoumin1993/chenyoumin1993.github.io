@@ -1,3 +1,18 @@
+- title: "Influence Guided Context Selection for Effective Retrieval-Augmented Generation"
+  authors:
+    - author: Jiale Deng
+    - author: Yanyan Shen
+    - author: Ziyuan Pei
+    - author: Youmin Chen
+    - author: Linpeng Huang
+  # corresponding: Youmin Chen
+  pubname: The 39th Annual Conference on Neural Information Processing Systems
+  pubnamebrief: NeurIPS'25
+  year: 2025
+  link: https://proceedings.neurips.cc/paper_files/paper/2025
+  type: conference
+  highlight: 1
+
 - title: "StageWise: Accelerating Persistent Key-Value Stores by Thread Model Redesigning"
   authors:
     - author: Zeqi Li
