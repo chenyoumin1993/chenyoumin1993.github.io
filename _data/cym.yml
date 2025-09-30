@@ -1,5 +1,6 @@
 # Describe your recent news
 news:
+  - title: Sept, 2025, Won the ACM SIGOPS ChinaSys Rising Star Award.
   - title: Sept, 2025, One paper has been accepted to NeurIPS'25.
   - title: Sept, 2025, Invited to serve in the TPC for EuroSys 2026.
   - title: Aug, 2025, One paper has been accepted to Trans. on Computers.
@@ -32,7 +33,7 @@ stu:
   - title: Yufei Hu (Master, start in 2025)
   - title: Daojun Dong (Master, start in 2025)
 
-students:
+phd:
   - name: Xin Fan
     year: 2025
     type: PhD
@@ -43,16 +44,17 @@ students:
     year: 2026
     type: PhD
     bs: BUAA
-    profile_pic: /_images/pp/fxk.png
+    profile_pic: /_images/pp/fxk.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Minrui Tang
     year: 2025
     type: PhD
     bs: XJU
-    tag: (co-advised)
+    tag: co-advised w/ Prof. Jiwu Shu
     profile_pic: /_images/pp/tmr.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
 
+master:
   - name: Hangyu Zhou
     year: 2024
     type: Master
@@ -63,7 +65,7 @@ students:
     year: 2024
     type: Master
     bs: XMU
-    tag: (co-advised)
+    tag: co-advised w/ Prof. Linpeng Huang
     profile_pic: /_images/pp/syh.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Wenhao Zhang
@@ -84,6 +86,13 @@ students:
     bs: XJTU
     profile_pic: /_images/pp/ddj.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Jielong Liao
+    year: 2025
+    type: Master
+    bs: FZU
+    tag: SJTU-Huawei Joint Program
+    profile_pic: /_images/pp/default.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Jincheng Cao
     year: 2026
     type: Master
@@ -94,36 +103,51 @@ students:
     year: 2026
     type: Master
     bs: SJTU
-    tag: (co-advised)
+    tag: co-advised w/ Prof. Yiming Zhang
     profile_pic: /_images/pp/hpy.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+undergrad:
   - name: Xunuo Wang
     year: 2025
     type: Undergrad
-    profile_pic: /_images/pp/default.png
+    bs: "John Class-2023"
+    profile_pic: /_images/pp/wxn.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Yinglun Chai
     year: 2025
     type: Undergrad
+    bs: "School of SE"
     profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
-
+  - name: Yongyu Zhang
+    year: 2025
+    bs: "John Class-2023"
+    type: Undergrad
+    profile_pic: /_images/pp/zyy.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Huiyin Wang
+    year: 2025
+    type: Undergrad
+    bs: "School of SE"
+    profile_pic: /_images/pp/why.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
 
 teach:
   - title: CS1501 (C++ Programming - Ideas and Methods)
-  
+
 # Describe the honors you have before.
 honors:
+  - title: ACM SIGOPS ChinaSys Rising Star Award, 2025.
   - title: CCF Outstanding Doctoral Dissertation Award, 2021. 
   - title: <a href="https://chinasys.org/doku.php?id=2021-09-23">ACM SIGOPS ChinaSys Doctoral Dissertation Award</a>, 2021. 
   - title: Distinguished PhD Dissertation Award of Tsinghua University (ranked 1st among all applicants in the CS Department), 2021.
   - title: Shuimu Tsinghua Scholar (清华大学"水木学者"计划), 2021.
   - title: Selected into the National Postdoctoral Innovative Talent Support Program (中国博士后创新人才支持计划, only 14 CSers nationwide were selected), 2021.
-  - title: CCF Technological Invention Award, first prize (中国计算机协会技术发明奖一等奖，第2完成人), 2020.
+  - title: CCF Technological Invention Award, first prize (中国计算机学会技术发明奖一等奖，第2完成人), 2020.
   - title: Huawei OlympusMons Award (华为奥林帕斯奖，第3完成人), 2020.
   - title: National Scholarship, Tsinghua University, 2020 (9 out of 100+ PhD students in the CS Department).
-  - title: First-class Scholarship (Huawei), Tsinghua University, 2019.
-  - title: First-class Scholarship (CreditEase), Tsinghua University, 2018.
+  # - title: First-class Scholarship (Huawei), Tsinghua University, 2019.
+  # - title: First-class Scholarship (CreditEase), Tsinghua University, 2018.
   # - title: Run Corporation Scholarship, Beihang University, 2015.
   # - title: Second Prize Scholarship for Freshman in Beihang University, 2012.
 
@@ -134,7 +158,7 @@ honors:
 #   - title: "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing, Dresden, Germany, 2019."
 
 services:
-  - title: 2025 - TPC member of USENIX ATC'25
+  - title: 2025 - TPC member of USENIX ATC'25, EuroSys'26
   - title: 2024 - External Reviewer Committee (ERC) of USENIX ATC'24
   - title: 2023 - Program Co-Chair of the 25th ChinaSys Workshop
   - title: 2022 - Youth Executive Committee Member of ACM ChinaSys

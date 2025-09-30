@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<h2>About Me</h2>
+<h3>About Me</h3>
 
 
 I am a tenure-track associate professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 

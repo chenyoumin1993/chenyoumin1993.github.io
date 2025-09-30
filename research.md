@@ -1,6 +1,6 @@
 ---
 layout: research
-title: Current Research Focus
+title: Current Research
 permalink: /research/
 ---
 
@@ -34,7 +34,7 @@ essential for achieving optimal device bandwidth utilization, minimal CPU overhe
 - Serverless LLM cold start optimization (Medusa[[ASPLOS'25]](/papers/asplos25-medusa.pdf))
 
 
-## Past Research Directions
+### Past Research Directions
 
 **Networked Memory Architecture** (2017 - 2020)
 

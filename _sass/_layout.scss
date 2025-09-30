@@ -209,7 +209,8 @@ h1 /* .post-title */ {
     }
 
     h3 {
-		font-style: italic;
+		// font-style: italic;
+        font-family: 'Titillium Web', sans-serif;
 /*        font-size: 26px; */
 
         @include media-query($on-laptop) {

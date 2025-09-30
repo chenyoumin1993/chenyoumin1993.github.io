@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Miscellaneous
+layout: page
+title:
 permalink: /misc/
 ---
 <!-- <h2>Current Students</h2>
@@ -10,20 +10,15 @@ permalink: /misc/
 {% endfor %}
 </ul> -->
 
-<h2>Teaching</h2>
-<ul style="overflow: hidden">
+<h3>Teaching</h3>
 {% for teach in site.data.cym.teach %}
-  <li>{{ teach.title }}</li>
++ {{ teach.title }}
 {% endfor %}
-</ul>
 
-<h2>Honors</h2>
-
-<ul style="overflow: hidden">
+<h3>Honors</h3>
 {% for honor in site.data.cym.honors %}
-  <li>{{ honor.title }}</li>
++ {{ honor.title }}
 {% endfor %}
-</ul>
 
 <!-- 
 <h2>Invited Talks</h2>
@@ -35,10 +30,24 @@ permalink: /misc/
 </ul> -->
 
 
-<h2>Professional Services</h2>
+<h3>Professional Services</h3>
 
-<ul style="overflow: hidden">
++ Conference Organizers
+  - ChinaSys'23 Fall (PC co-chair)
+
++ Program Committee Members
+  - 2025: USENIX ATC'25, EuroSys'26
+  - 2024: USENIX ATC'24 (ERC)
+  - 2022: ICPADS'22
+
++ Journal Reviewers
+  - 2022: ACM TOS, CCF-THPC
+  - 2021: TPDS
+  - 2020: IEEE TC
+  - 2019: ACM TOS, JSA
+
+<!-- <ul style="overflow: hidden">
 {% for service in site.data.cym.services %}
   <li>{{ service.title }}</li>
 {% endfor %}
-</ul>
+</ul> -->
