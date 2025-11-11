@@ -1,3 +1,17 @@
+- title: "zBuffer: Zero-Copy and Metadata-Free Serialization for Fast RPC with Scatter-Gather Reflection"
+  authors:
+    - author: Xiangyu Liu
+    - author: Huiba Li
+    - author: Shun Gai
+    - author: Youmin Chen
+    - author: Yiming Zhang
+  pubname: The ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+  pubnamebrief: PPoPP'26
+  year: 2026
+  link: https://ppopp26.sigplan.org/
+  type: conference
+  highlight: 1
+
 - title: "Influence Guided Context Selection for Effective Retrieval-Augmented Generation"
   authors:
     - author: Jiale Deng
