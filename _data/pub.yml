@@ -4,7 +4,8 @@
     - author: Huiba Li
     - author: Shun Gai
     - author: Youmin Chen
-    - author: Yiming Zhang
+    - author: Yiming Zhang*
+  corresponding: Youmin Chen
   pubname: The ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
   pubnamebrief: PPoPP'26
   year: 2026

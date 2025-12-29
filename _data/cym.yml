@@ -120,12 +120,6 @@ undergrad:
     bs: "School of SE"
     profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
-  - name: Yongyu Zhang
-    year: 2025
-    bs: "John Class-2023"
-    type: Undergrad
-    profile_pic: /_images/pp/zyy.png
-    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Huiyin Wang
     year: 2025
     type: Undergrad
