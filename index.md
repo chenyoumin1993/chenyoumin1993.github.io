@@ -8,7 +8,7 @@ layout: home
 I am a tenure-track associate professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 
 [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/). 
 I lead the Storage, Operating, and AI Systems Research (SOAR) group,
-an am also a member of the [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
+and am a member of the [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
 I build fast and robust next-gen data and storage systems.
 My work has appeared at top systems venues such as SOSP, FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
 My current research interests lie at the intersection of storage systems and the following three disciplines:
