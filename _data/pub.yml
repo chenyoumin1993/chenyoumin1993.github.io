@@ -1,3 +1,16 @@
+- title: "Persistent Caching Systems Do not Mean Crash Consistency"
+  authors:
+    - author: Shaohua Duan
+    - author: Youmin Chen
+  corresponding: Youmin Chen
+  pubname: Transactions on Storage
+  pubnamebrief: TOS'26
+  year: 2026
+  link: 
+  type: journal
+  highlight: 2
+  tag: Fast-tracked
+
 - title: "zBuffer: Zero-Copy and Metadata-Free Serialization for Fast RPC with Scatter-Gather Reflection"
   authors:
     - author: Xiangyu Liu
