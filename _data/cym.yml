@@ -36,19 +36,25 @@ stu:
 
 phd:
   - name: Xin Fan
-    year: 2025
+    year: Since 2025
     type: PhD
     bs: WHU
     profile_pic: /_images/pp/fx.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Xingkun Fan
-    year: 2026
+    year: Incoming Fall 2026
     type: PhD
     bs: BUAA
     profile_pic: /_images/pp/fxk.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Sundi Guan
+    year: Incoming Fall 2026
+    type: PhD
+    bs: NWPU
+    profile_pic: /_images/pp/gsd.jpg
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Minrui Tang
-    year: 2025
+    year: Since 2025
     type: PhD
     bs: XJU
     tag: co-advised w/ Prof. Jiwu Shu
@@ -57,51 +63,51 @@ phd:
 
 master:
   - name: Hangyu Zhou
-    year: 2024
+    year: Since 2024
     type: Master
     bs: NUAA
     profile_pic: /_images/pp/zhy.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Yihao Shao
-    year: 2024
+    year: Since 2024
     type: Master
     bs: XMU
     tag: co-advised w/ Prof. Linpeng Huang
     profile_pic: /_images/pp/syh.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Wenhao Zhang
-    year: 2024
+    year: Since 2024
     type: Master
     bs: HUST
     profile_pic: /_images/pp/zwh.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Yufei Hu
-    year: 2025
+    year: Since 2025
     type: Master
     bs: HUST
     profile_pic: /_images/pp/hyf.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Daojun Dong
-    year: 2025
+    year: Since 2025
     type: Master
     bs: XJTU
     profile_pic: /_images/pp/ddj.jpg
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Jielong Liao
-    year: 2025
+    year: Since 2025
     type: Master
     bs: FZU
     tag: SJTU-Huawei Joint Program
     profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Jincheng Cao
-    year: 2026
+    year: Incoming Fall 2026
     type: Master
     bs: HIT (ShenZhen)
     profile_pic: /_images/pp/cjc.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Peiyu He
-    year: 2026
+    year: Incoming Fall 2026
     type: Master
     bs: SJTU
     tag: co-advised w/ Prof. Yiming Zhang
@@ -109,22 +115,28 @@ master:
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
 undergrad:
   - name: Xunuo Wang
-    year: 2025
+    year: Since 2025
     type: Undergrad
     bs: "John Class-2023"
     profile_pic: /_images/pp/wxn.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Yinglun Chai
-    year: 2025
+    year: Since 2025
     type: Undergrad
     bs: "School of SE"
     profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   - name: Huiyin Wang
-    year: 2025
+    year: Since 2025
     type: Undergrad
     bs: "School of SE"
     profile_pic: /_images/pp/why.png
+    # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  - name: Mengyang Liu
+    year: Since 2026
+    type: Undergrad
+    bs: "HRBUST Class-2024"
+    profile_pic: /_images/pp/default.png
     # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
 
 teach:

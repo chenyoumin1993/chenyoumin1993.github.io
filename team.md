@@ -24,7 +24,7 @@ focusing on innovative approaches to system design that prioritize efficiency, s
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title"><b>{{ins.name}}</b></h5>
-              <p class="card-text" style="margin-top:0px;margin-bottom:0px">Joined in {{ins.year}}</p>
+              <p class="card-text" style="margin-top:0px;margin-bottom:0px">{{ins.year}}</p>
               <p class="card-text" style="margin-top:0px;margin-bottom:0px">B.S. from {{ins.bs}}</p>
               <p class="card-text" style="margin-top:0px;margin-bottom:0px">
                 <small class="text-muted">{{ins.tag}}</small>
@@ -49,7 +49,7 @@ focusing on innovative approaches to system design that prioritize efficiency, s
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title"><b>{{ins.name}}</b></h5>
-              <p class="card-text" style="margin-top:0px;margin-bottom:0px">Joined in {{ins.year}}</p>
+              <p class="card-text" style="margin-top:0px;margin-bottom:0px">{{ins.year}}</p>
               <p class="card-text" style="margin-top:0px;margin-bottom:0px">B.S. from {{ins.bs}}</p>
               <p class="card-text" style="margin-top:0px;margin-bottom:0px">
                 <small class="text-muted">{{ins.tag}}</small>
@@ -74,7 +74,7 @@ focusing on innovative approaches to system design that prioritize efficiency, s
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title"><b>{{ins.name}}</b></h5>
-              <p class="card-text" style="margin-top:0px;margin-bottom:0px">Joined in {{ins.year}}</p>
+              <p class="card-text" style="margin-top:0px;margin-bottom:0px">{{ins.year}}</p>
               <p class="card-text" style="margin-top:0px;margin-bottom:0px">{{ins.bs}}</p>
               <p class="card-text" style="margin-top:0px;margin-bottom:0px">
                 <small class="text-muted">{{ins.tag}}</small>
