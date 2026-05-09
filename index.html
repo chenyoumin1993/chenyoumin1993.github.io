@@ -378,9 +378,9 @@
                                 <div style="color:var(--text-secondary); font-size:14px; margin-top:3px;">${p.pubname}, ${p.year}</div>
                                 <div style="margin-top:5px; display:flex; gap:10px; align-items:center;">
                                     <span class="year-badge" style="font-weight: bold;">${p.pubnamebrief}</span>
-                                    ${p.tag ? `<span class="year-badge" style="font-weight: bold;">${p.tag}</span>` : ''}
-                                    ${p.link ? `<a href="${p.link}"><span class="year-badge" style="font-weight: bold;">Paper</span></a>` : ''}
-                                    ${p.slides ? `<a href="${p.link}"><span class="year-badge" style="font-weight: bold;">Slides</span></a>` : ''}
+                                    ${p.link ? `<span class="year-badge"><a href="${p.link}" style="font-weight: bold;">[Paper]</a></span>` : ''}
+                                    ${p.slide ? `<span class="year-badge"><a href="${p.slide} " style="font-weight: bold;">[Slides]</a></span>` : ''}
+                                    ${p.tag ? `<span style="color:var(--warning); font-size:12px;"> ${p.tag}</span>` : ''}
                                 </div>
                             </div>
                         </div>
