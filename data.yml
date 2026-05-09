@@ -2,7 +2,7 @@ profile:
   name: "Youmin Chen"
   role: "Tenure-track Associate Professor"
   university: "Department of Computer Sciences, SJTU"
-  email: "chenyoumin@sjtu.edu.cn"
+  email: "chenyoumin at sjtu dot edu dot cn"
   office: "SEIEE Building 3-524"
   location: "Gates Building, Room 302"
   avatar_url: "/images/cym.jpg"
@@ -186,7 +186,7 @@ pastresearch:
 services:
   - title: Program Committee Member
     context: Conferences
-    desc: USENIX ATC'25, EuroSys'26, USENIX ATC'24 (ERC), ICPADS'22
+    desc: EuroSys'26, USENIX ATC'25, USENIX ATC'24 (ERC), ICPADS'22
   - title: Program Co-Chair
     context: Workshop
     desc: The 25th ChinaSys Workshop
@@ -282,7 +282,7 @@ conference:
   type: conference
   highlight: 1
 - title: "Fast Core Scheduling with Userspace Process Abstraction"
-  authors: Jiazhen Lin#, **Youmin Chen**, Shiwei Gao, Youyou Lu
+  authors: Jiazhen Lin#, **Youmin Chen#**, Shiwei Gao, Youyou Lu
   equal: Youmin Chen
   pubname: The 30th ACM Symposium on Operating Systems Principles
   pubnamebrief: SOSP'24
@@ -291,7 +291,7 @@ conference:
   type: conference
   highlight: 1
 - title: "Exploring the Asynchrony of Slow Memory Filesystem with EasyIO"
-  authors: Bohong Zhu, **Youmin Chen**, Jiwu Shu
+  authors: Bohong Zhu, **Youmin Chen**\*, Jiwu Shu
   corresponding: Youmin Chen
   pubname: The 19th European Conference on Computer Systems
   pubnamebrief: EuroSys'24
