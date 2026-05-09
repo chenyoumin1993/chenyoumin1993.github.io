@@ -30,6 +30,58 @@ profile:
     - { name: "GitHub", icon: "fa-github", url: "https://github.com/chenyoumin1993" }
     - { name: "DBLP", icon: "fa-database", url: "https://dblp.org/pid/203/1564.html" }
 
+news:
+  - date: Nov, 2025
+    title: One paper has been accepted to PPoPP'26.
+  - date: Sept, 2025
+    title: Won the ACM SIGOPS ChinaSys Rising Star Award.
+  - date: Sept, 2025
+    title: One paper has been accepted to NeurIPS'25.
+  - date: Sept, 2025
+    title: Invited to serve in the TPC for EuroSys 2026.
+  - date: Aug, 2025
+    title: One paper has been accepted to Trans. on Computers.
+  - date: July, 2025
+    title: Our paper (μTPS) has been accepted to SOSP'25.
+  - date: April, 2025
+    title: Our paper (crash consistency test of Open CAS) has been accepted to USENIX ATC'25.
+  - date: Nov, 2024
+    title: Invited to serve in the TPC for USENIX ATC 2025.
+  - date: Oct, 2024
+    title: Medusa (serverless LLM serving with state materialization) has been accepted to ASPLOS'25.
+  - date: Aug, 2024
+    title: HCache (fast state restoration in LLM serving) has been accepted to EuroSys'25.
+  - date: Aug, 2024
+    title: Vessel (a pure userspace process abstraction) has been accepted to SOSP'24.
+  - date: July, 2024
+    title: I will join SJTU as Tenure-Track Associate Professor.
+  - date: Sept, 2023
+    title: Our paper (EasyIO)  has been accepted to EuroSys'24.
+  - date: Sept, 2022
+    title: One proposal is funded by NSFC (Youth Program).
+  - date: Dec, 2021
+    title: Plor (transactions w/ predictable and low tail latency) has been accepted to SIGMOD'22.
+  - date: May, 2021
+    title: I successfully defended my Ph.D. dissertation.
+  - date: Feb, 2021
+    title: Aria (a secure key-value store) has been accpeted to ICDE'21.
+  - date: Dec, 2020
+    title: Serve as a student reviewer of [JSys](https://www.jsys.org/cfp_students/), a diamond open-access journal covering all areas of computer systems research.
+  - date: Dec, 2020
+    title: two papers (KucoFS, Concordia) have been accepted to USENIX FAST'21.
+  - date: Aug, 2020
+    title: μTree (a Persistent B+-Tree with Low Tail Lateny) has been accepted to VLDB'20 ([slides](/slides/vldb20-slide-utree.pdf)).
+  - date: Nov, 2019
+    title: FlatStore (an Efficient Log-Structured Key-Value Storage Engine for Persistent Memory) has been accepted to ASPLOS'20 ([talk](https://www.youtube.com/watch?v=TCq6iLuVRHE) is now available on YouTube).
+  - date: Nov, 2019
+    title: Moved to UW-Madison.
+  - date: Aug, 2019
+    title: Our paper "Kernel/User-level Collaborative Persistent Memory File System with Efficiency and Protection" is available on [arXiv](https://arxiv.org/pdf/1908.10740.pdf).
+  - date: Mar, 2019
+    title: I will join UW-Madison to work as a visiting student researcher in this fall, advised by Remzi H. Arpaci-Dusseau (conditional).
+  - date: Dec, 2018
+    title: Our paper "Scalable RDMA RPC on Reliable Connections with Efficient Resource Sharing" has been accepted to Eurosys'19.
+
 team:
   phd:
     - name: Xin Fan

@@ -208,6 +208,57 @@
         
         .profile-header { display: flex; gap: 28px; align-items: center; margin-bottom: 30px; }
         .profile-pic { width: 150px; height: 220px; border-radius: 10px; object-fit: cover; border: 1px solid #d9dee8; box-shadow: 0 12px 28px rgba(35,48,72,0.18); flex-shrink: 0; }
+        .recruitment-note {
+            margin: -4px 0 28px 0;
+            padding: 14px 16px;
+            color: #000000;
+            font-weight: 700;
+            line-height: 1.65;
+            background: #fff7d6;
+            border: 1px solid #f2d36b;
+            border-radius: 8px;
+        }
+        .recruitment-note a {
+            color: blue;
+            text-decoration: underline;
+        }
+        .news-list {
+            margin-top: 10px;
+            border-top: 1px solid var(--separator);
+        }
+        .news-item {
+            display: grid;
+            grid-template-columns: 92px minmax(0, 1fr);
+            gap: 16px;
+            align-items: baseline;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--separator);
+        }
+        .news-date {
+            color: var(--text-tertiary);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.45;
+            white-space: nowrap;
+        }
+        .news-title {
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            min-width: 0;
+        }
+        .news-title a {
+            color: #075bb8;
+            font-weight: 600;
+            text-decoration: none;
+            background:
+                linear-gradient(rgba(10, 102, 217, 0.14), rgba(10, 102, 217, 0.14)) 0 100% / 100% 2px no-repeat;
+        }
+        .news-title a:hover {
+            color: #03428a;
+            background-size: 100% 100%;
+        }
         
         .tag { display: inline-block; background: rgba(0,122,255,0.1); padding: 4px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px; color: var(--accent); text-decoration: none; transition: 0.2s; }
         .tag:hover { background: var(--accent); color: #fff; }
@@ -263,6 +314,7 @@
             .sidebar { width: 100%; height: auto; flex-direction: row; overflow-x: auto; }
             .profile-header { flex-direction: column; align-items: flex-start; }
             .profile-pic { width: min(100%, 220px); height: 300px; }
+            .news-item { grid-template-columns: 1fr; gap: 4px; }
             .card-grid { grid-template-columns: 1fr; }
             .card { min-height: 112px; gap: 12px; }
             .card-avatar { width: 88px; height: 88px; border-radius: 10px; }
@@ -363,8 +415,13 @@
                         </div>
                     </div>
                     
-                    <h3>About</h3>
+                    <p class="recruitment-note">I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. 
+                        If you are interested, please refer to the <a href="/static_files/recruitment_v4.pdf">details</a> and don't hesitate to reach out via email.
+                        [招收2027年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考<a href="/static_files/recruitment_v4.pdf">链接</a>；长期有效：欢迎本校大二/大三本科生加入课题组开展系统方向的科研工作，方式包括但不限于PRP项目、毕业设计等]</p>
+
+                    <h2>About</h2>
                     <div class="markdown-content" style="font-size:16px; line-height:1.7;">${marked.parse(data.profile.bio)}</div>
+                    ${renderNews()}
                 `
             },
             pubs: {
@@ -533,6 +590,23 @@
                 `
             }
         };
+
+        function renderNews() {
+            const news = (data.news || []).slice(0, 10);
+            if (!news.length) return '';
+
+            return `
+                <h2>News</h2>
+                <div class="news-list">
+                    ${news.map(item => `
+                        <div class="news-item">
+                            <div class="news-date">${item.date || ''}</div>
+                            <div class="news-title">${marked.parseInline(item.title || '')}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
 
         // --- WINDOW MANAGER ---
         function openApp(key) {
