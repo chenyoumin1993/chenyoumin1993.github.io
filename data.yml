@@ -390,7 +390,7 @@ conference:
 
 journal:
 - title: "Persistent Caching Systems Do not Mean Crash Consistency"
-  authors: Shaohua Duan, Youmin Chen
+  authors: Shaohua Duan, **Youmin Chen**\*
   pubname: Transactions on Storage
   pubnamebrief: TOS'26
   year: 2026
