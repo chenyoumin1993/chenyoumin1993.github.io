@@ -1,0 +1,463 @@
+profile:
+  name: "Youmin Chen"
+  role: "Tenure-track Associate Professor"
+  university: "Department of Computer Sciences, SJTU"
+  email: "chenyoumin@sjtu.edu.cn"
+  office: "SEIEE Building 3-524"
+  location: "Gates Building, Room 302"
+  avatar_url: "/images/cym.jpg"
+  bio: |
+
+    I am a tenure-track associate professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 
+    [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/). 
+    I lead the Storage, Operating, and AI Systems Research (**SOAR**) group,
+    and am a member of the [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
+    I build fast and robust next-gen data and storage systems.
+    My work has appeared at top systems venues such as SOSP, FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
+    My current research interests lie at the intersection of storage systems and the following three disciplines:
+
+    **Storage &times; OS**: **New abstractions** with enhanced flexibility, programmability, and schedulability.
+
+    **Storage &times; H/W**: **New systems** with faster interactions between hardware and software.
+
+    **Storage &times; AI**: **New applications** (e.g., LLM/agents) through algorithm–storage co-design.
+
+    I received my Ph.D. degree in Computer Science from Tsinghua University, advised by ([Jiwu Shu](http://storage.cs.tsinghua.edu.cn/~jiwu-shu) 
+    and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor’s degree from [Honors College (formerly School of Advanced 
+    Engineering)](http://hc.buaa.edu.cn/), at [Beihang University](http://www.buaa.edu.cn). From 2021 to 2024, I was a postdoctoral researcher at Tsinghua University. Earlier, from 2019 to 2020, I was a visiting scholar in the ADSL lab at the University of Wisconsin–Madison, working with Professors [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
+  socials:
+    - { name: "Google Scholar", icon: "fa-graduation-cap", url: "#" }
+    - { name: "Twitter", icon: "fa-twitter", url: "#" }
+
+team:
+  phd:
+    - name: Xin Fan
+      year: Since 2025
+      type: PhD
+      bs: WHU
+      avatar_url: /images/fx.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Xingkun Fan
+      year: Incoming Fall 2026
+      type: PhD
+      bs: BUAA
+      avatar_url: /images/fxk.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Sundi Guan
+      year: Incoming Fall 2026
+      type: PhD
+      bs: NWPU
+      avatar_url: /images/gsd.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Minrui Tang
+      year: Since 2025
+      type: PhD
+      bs: XJU
+      tag: co-advised w/ Prof. Jiwu Shu
+      avatar_url: /images/tmr.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  master:
+    - name: Hangyu Zhou
+      year: Since 2024
+      type: Master
+      bs: NUAA
+      avatar_url: /images/zhy.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Yihao Shao
+      year: Since 2024
+      type: Master
+      bs: XMU
+      tag: co-advised w/ Prof. Linpeng Huang
+      avatar_url: /images/syh.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Wenhao Zhang
+      year: Since 2024
+      type: Master
+      bs: HUST
+      avatar_url: /images/zwh.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Yufei Hu
+      year: Since 2025
+      type: Master
+      bs: HUST
+      avatar_url: /images/hyf.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Daojun Dong
+      year: Since 2025
+      type: Master
+      bs: XJTU
+      avatar_url: /images/ddj.jpg
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Jielong Liao
+      year: Since 2025
+      type: Master
+      bs: FZU
+      tag: SJTU-Huawei Joint Program
+      avatar_url: /images/default.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Jincheng Cao
+      year: Incoming Fall 2026
+      type: Master
+      bs: HIT (ShenZhen)
+      avatar_url: /images/cjc.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Peiyu He
+      year: Incoming Fall 2026
+      type: Master
+      bs: SJTU
+      tag: co-advised w/ Prof. Yiming Zhang
+      avatar_url: /images/hpy.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+  undergrad:
+    - name: Xunuo Wang
+      year: Since 2025
+      type: Undergrad
+      bs: "John Class-2023"
+      avatar_url: /images/wxn.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Yinglun Chai
+      year: Since 2025
+      type: Undergrad
+      bs: "School of SE"
+      avatar_url: /images/default.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Huiyin Wang
+      year: Since 2025
+      type: Undergrad
+      bs: "School of SE"
+      avatar_url: /images/why.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Mengyang Liu
+      year: Since 2026
+      type: Undergrad
+      bs: "HRBUST Class-2024"
+      avatar_url: /images/default.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+
+research:
+  - title: "Storage &times; OS: New Abstraction"
+    image: "/images/storage-os.jpg"
+    desc: |
+      As emerging storage and memory technologies deliver unprecedented hardware performance, 
+      we aim to fundamentally redesign the OS-storage boundary through novel abstractions — 
+      such as userspace process, thread model, and I/O stacks — to fully unlock hardware capabilities.
+      - a new thread model for in-memory KVS (&mu;TPS[[SOSP'25]](https://sigops.org/s/conferences/sosp/2025/))
+      - a userspace process for fast core reallocation (Vessel[[SOSP'24]](/papers/sosp24-vessel.pdf))
+      - a holistic IO stack design for CSDs (&lambda;-IO[[FAST'23]](/papers/fast23-yang-zhe.pdf))
+  - title: "Storage &times; H/W: New Systems"
+    image: "/images/storage-hw.jpg"
+    desc: |
+      This research direction explores the vital intersection of advanced storage systems and emerging hardware architectures, 
+      such as disaggregated memory, SmartNIC, etc. The significance lies in bridging the critical gap between raw hardware 
+      capabilities and system-level efficiency. 
+      - crash consistency study of Open CAS ([USENIX ATC'25](https://www.usenix.org/conference/atc25/presentation/duan-shaohua))
+      - an asynchronous IO engine for disaggregated memory (EasyIO[[EuroSys'24]](/papers/eurosys24-easyio.pdf)) 
+  - title: "Storage &times; AI: New Applications"
+    image: "/images/storage-ai.jpg"
+    desc: |
+      This research direction addresses the critical performance and cost bottlenecks of modern AI deployment by rethinking storage systems for data-intensive Large Language Models (LLMs). 
+      - KV Cache management for LLM inference (HCache[[EuroSys'25]](/papers/eurosys25-hcache.pdf))
+      - Serverless LLM cold start optimization (Medusa[[ASPLOS'25]](/papers/asplos25-medusa.pdf))
+
+pastresearch:
+  - title: "Networked Memory Architecture (2017 - 2020)"
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    desc: |
+      As the storage and network technologies evolve rapidly, the CPU performance remains comparatively stagnant as Moore's law slows in the past years. Due to this reason, the CPU running with the heavy-weight storage software can easily become the bottleneck. We tackle this problem from various aspects.
+
+      - A kernel-user space collaborative architecture for scalable filesystem designs (Kuco[[FAST'21]](/papers/fast21-kucofs.pdf)) 
+      - RDMA-enabled distributed persistent shared memory (or DPSM) (Octopus[[USENIX ATC'17, TOS'20]](/papers/atc17-octopus.pdf)).
+      - RDMA-based RPC system with scalability and reliablity (ScaleRPC[[EuroSys'19]](/papers/eurosys19-scalerpc.pdf))
+  - title: "CPU-efficient IO Engine (2020 - 2024)"
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    desc: |
+      Purely reducing the overhead of storage software is still not enough; system designers must be also device-aware since the emerging hardware typically exhibits bizarre performance behavior. For example, non-volatile storage devices have asymmetric read/write performance, device-level IO amplification, and performance variability; in this context, we designed: 
+      
+      - a holistic IO stack design for computational storage devices (&lambda;-IO[[FAST'23]](/papers/fast23-yang-zhe.pdf))
+      - a key-value store that uses compacted log to mitigate the IO amplification (FlatStore[[ASPLOS'20]](/papers/asplos20-flatstore.pdf)) 
+  - title: "Low Tail Latency Concurrency Control (2020 - 2024)"
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    desc: |
+      Apart from seeking higher throughput and lower latency, datacenter applications also require their performance to be predictable (often defined as 99th or 99.9th percentile latencies). Latency variability can arise for many reasons, including sharing resources (e.g., CPU cores, caches, memory bandwidth, etc.), background activities, queuing, and others. In the past years, we have witnessed an active line of research work that improves performance predictability at different layers, but they ignore the fact that the workload is another source of incurring latency spikes due to request conflicts. Here, I take a much deeper dive to the concurrency protocol design with the workload-aware principle in mind. 
+      - *coordinated concurrency control* for tree-based index structures (&mu;Tree[[VLDB'20]](/papers/vldb20-utree.pdf)) 
+      - *pessimistic locking and opportunistic reading* for transactional systems (Plor[[SIGMOD'22]](/papers/sigmod22plor.pdf))
+
+services:
+  - title: Program Committee Member
+    context: Conferences
+    desc: USENIX ATC'25, EuroSys'26, USENIX ATC'24 (ERC), ICPADS'22
+  - title: Program Co-Chair
+    context: Workshop
+    desc: The 25th ChinaSys Workshop
+  - title: Youth Executive Committee Member
+    context: Organization
+    desc: ACM SIGOPS ChinaSys
+  - title: Journal Reviewer
+    context: Journal
+    desc: TOCS, TPDS, TC, TOS, JSA, etc.
+
+teaching:
+  - title: CS1501 (C++ Programming - Ideas and Methods)
+    year: 2025, 2026
+
+awards:
+  - title: ACM SIGOPS ChinaSys Rising Star Award
+    year: 2025
+  - title: CCF Outstanding Doctoral Dissertation Award
+    year: 2021
+  - title: ACM SIGOPS ChinaSys Doctoral Dissertation Award
+    year: 2021 
+  - title: Distinguished PhD Dissertation Award of Tsinghua University 
+    desc: Ranked 1st among all applicants in the CS Department
+    year: 2021
+  - title: Shuimu Tsinghua Scholar (清华大学"水木学者"计划)
+    year: 2021
+  - title: National Postdoctoral Innovative Talent Support Program (中国博士后创新人才支持计划)
+    desc: Only 14 CSers nationwide were selected
+    year: 2021
+  - title: CCF Technological Invention Award, first prize (中国计算机学会技术发明奖一等奖)
+    desc: 第2完成人
+    year: 2020
+  - title: Huawei OlympusMons Award (华为奥林帕斯奖)
+    desc: 第3完成人
+    year: 2020
+  - title: National Scholarship, Tsinghua University
+    desc: 9 out of 100+ PhD students in the CS Department
+    year: 2020
+
+conference:
+
+
+- title: "zBuffer: Zero-Copy and Metadata-Free Serialization for Fast RPC with Scatter-Gather Reflection"
+  authors: Xiangyu Liu, Huiba Li, Shun Gai, **Youmin Chen**\*, Yiming Zhang\*
+  pubname: The ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+  pubnamebrief: PPoPP'26
+  year: 2026
+  link: https://ppopp26.sigplan.org/
+  type: conference
+  highlight: 1
+- title: "Influence Guided Context Selection for Effective Retrieval-Augmented Generation"
+  authors: Jiale Deng, Yanyan Shen, Ziyuan Pei, **Youmin Chen**, Linpeng Huang
+  # corresponding: Youmin Chen
+  pubname: The 39th Annual Conference on Neural Information Processing Systems
+  pubnamebrief: NeurIPS'25
+  year: 2025
+  link: https://proceedings.neurips.cc/paper_files/paper/2025
+  type: conference
+  highlight: 1
+- title: "Rearchitecting the Thread Model of In-Memory Key-Value Stores with μTPS"
+  authors: "**Youmin Chen**, Jiwu Shu, Yanyan Shen, Linpeng Huang, Hong Mei"
+  # corresponding: Youmin Chen
+  pubname: The 31st Symposium on Operating Systems Principles
+  pubnamebrief: SOSP'25
+  year: 2025
+  link: https://sigops.org/s/conferences/sosp/2025/
+  type: conference
+  highlight: 1
+- title: "Crash Consistency in Block-Level Caching Systems: An Open CAS  Case Study"
+  authors: Shaohua Duan, Youmin Chen
+  corresponding: Youmin Chen
+  pubname: The 2025 USENIX Annual Technical Conference
+  pubnamebrief: USENIX ATC'25
+  year: 2025
+  link: https://www.usenix.org/conference/atc25/presentation/duan-shaohua
+  type: conference
+  highlight: 1
+  tag: Invited for fast-tracked publication in ACM Transactions on Storage
+- title: "Medusa: Accelerating Serverless LLM Inference with Materialization"
+  authors: Shaoxun Zeng, Minhui Xie, Shiwei Gao, **Youmin Chen**, Youyou Lu
+  pubname: the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+  pubnamebrief: ASPLOS'25
+  year: 2025
+  link: /papers/asplos25-medusa.pdf
+  type: conference
+  highlight: 1
+- title: "Fast State Restoration in LLM Serving with HCache"
+  authors: Shiwei Gao, **Youmin Chen**, Jiwu Shu
+  pubname: The 20th European Conference on Computer Systems
+  pubnamebrief: EuroSys'25
+  year: 2025
+  link: /papers/eurosys25-hcache.pdf
+  type: conference
+  highlight: 1
+- title: "Fast Core Scheduling with Userspace Process Abstraction"
+  authors: Jiazhen Lin#, **Youmin Chen**, Shiwei Gao, Youyou Lu
+  equal: Youmin Chen
+  pubname: The 30th ACM Symposium on Operating Systems Principles
+  pubnamebrief: SOSP'24
+  year: 2024
+  link: /papers/sosp24-vessel.pdf
+  type: conference
+  highlight: 1
+- title: "Exploring the Asynchrony of Slow Memory Filesystem with EasyIO"
+  authors: Bohong Zhu, **Youmin Chen**, Jiwu Shu
+  corresponding: Youmin Chen
+  pubname: The 19th European Conference on Computer Systems
+  pubnamebrief: EuroSys'24
+  year: 2024
+  link: /papers/eurosys24-easyio.pdf
+  type: conference
+  highlight: 1
+- title: "λ-IO: A Unified IO Stack for Computational Storage"
+  authors: Zhe Yang, Youyou Lu, Xiaojian Liao, **Youmin Chen**, Junru Li, Siyu He, Jiwu Shu
+  pubname: The 21st USENIX Conference on File and Storage Technologies 
+  pubnamebrief: FAST'23
+  year: 2023
+  link: /papers/fast23-yang-zhe.pdf
+  code: https://github.com/thustorage/lambda-io
+  type: conference
+  highlight: 1
+- title: "Plor: General Transactions with Predictable, Low Tail Latency"
+  authors: "**Youmin Chen**, Xiangyao Yu, Paraschos Koutris, Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau, Jiwu Shu"
+  pubname: ACM SIGMOD International Conference on Management of Data 
+  pubnamebrief: SIGMOD'22
+  year: 2022
+  link: /papers/sigmod22plor.pdf
+  type: conference
+  highlight: 1
+- title: "Aria: Tolerating Skewed Workloads in Secure In-memory Key-value Stores"
+  authors: Fan Yang, **Youmin Chen**, Youyou Lu, Qing Wang, Jiwu Shu
+  pubname: 37th IEEE International Conference on Data Engineering 
+  pubnamebrief: ICDE'21
+  year: 2021
+  link: /papers/icde21-aria.pdf
+  type: conference
+  highlight: 1
+- title: "Scalable Persistent Memory File System with Kernel-Userspace Collaboration"
+  authors: "**Youmin Chen**, Youyou Lu, Bohong Zhu, Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau, Jiwu Shu"
+  pubname: USENIX Conference on File and Storage Technologies 
+  pubnamebrief: FAST'21
+  year: 2021
+  link: /papers/fast21-kucofs.pdf
+  type: conference
+  highlight: 1
+- title: "Concordia: Distributed Shared Memory with In-Network Cache Coherence"
+  authors: Qing Wang, Youyou Lu, Erci Xu, Junru Li, **Youmin Chen**, Jiwu Shu
+  pubname: USENIX Conference on File and Storage Technologies 
+  pubnamebrief: FAST'21
+  year: 2021
+  link: /papers/fast21-concordia.pdf
+  type: conference
+  highlight: 1
+- title: "μTree: a Persistent B+-Tree with Low Tail Latency"
+  authors: "**Youmin Chen**, Youyou Lu, Kedong Fang, Qing Wang, Jiwu Shu"
+  pubname: 46th International Conference on Very Large Data Bases
+  pubnamebrief: VLDB'20
+  year: 2020
+  link: /papers/vldb20-utree.pdf
+  type: conference
+  slide: /slides/vldb20-slide-utree.pdf
+  highlight: 1
+- title: "FlatStore: an Efficient Log-Structured Key-Value Storage Engine for Persistent Memory"
+  authors: "**Youmin Chen**, Youyou Lu, Fan Yang, Qing Wang, Yang Wang, Jiwu Shu"
+  pubname: Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems
+  pubnamebrief: ASPLOS'20
+  year: 2020
+  link: /papers/asplos20-flatstore.pdf
+  type: conference
+  slide: /slides/asplos20-slide-flatstore.pdf
+  highlight: 1
+  tag: "TOP-20 most-cited papers in the past 5 years (Google Scholar Metrics)"
+- title: "No Compromises: Secure NVM with Crash Consistency, Write-Efficiency and High-Performance"
+  authors: Fan Yang, Youyou Lu, **Youmin Chen**, Haiyu Mao, Jiwu Shu
+  pubname: Design Automation Conference
+  pubnamebrief: DAC'19
+  year: 2019
+  link: /papers/dac19-ccNVM.pdf
+  type: conference
+  highlight: 1
+- title: "Scalable RDMA RPC on Reliable Connection with Efficient Resource Sharing"
+  authors: "**Youmin Chen**, Youyou Lu, Jiwu Shu"
+  pubname: Proceedings of the Fourteenth EuroSys Conference
+  pubnamebrief: EuroSys'19
+  year: 2019
+  link: /papers/eurosys19-scalerpc.pdf
+  slide: /slides/eurosys19-slide-ScaleRPC.pdf
+  type: conference
+  highlight: 1
+  tag: "TOP-50 most-cited papers in the past 5 years (Google Scholar Metrics)"
+- title: "Octopus: an RDMA-enabled Distributed Persistent Memory File System"
+  authors: Youyou Lu, Jiwu Shu, **Youmin Chen**, Tao Li
+  pubname: USENIX Annual Technical Conference
+  pubnamebrief: USENIX ATC'17
+  year: 2017
+  link: /papers/atc17-octopus.pdf
+  type: conference
+  highlight: 1
+  tag: "TOP-20 most-cited papers in the past 5 years (Google Scholar Metrics)"
+
+
+journal:
+- title: "Persistent Caching Systems Do not Mean Crash Consistency"
+  authors: Shaohua Duan, Youmin Chen
+  pubname: Transactions on Storage
+  pubnamebrief: TOS'26
+  year: 2026
+  link: 
+  type: journal
+  highlight: 2
+  tag: Fast-tracked
+- title: "StageWise: Accelerating Persistent Key-Value Stores by Thread Model Redesigning"
+  authors: Zeqi Li, **Youmin Chen**, Qing Wang, Youyou Lu, Jiwu Shu
+  pubname: IEEE Transactions on Computers
+  pubnamebrief: TC
+  year: 2025
+  link: 
+  type: journal
+  highlight: 2
+- title: "TH-iSSD: Design and Implementation of a Generic and Reconfigurable Near-Data Processing Framework"
+  authors: Jiwu Shu, Kedong Fang, **Youmin Chen**, Shuo Wang
+  pubname: Transactions on Embedded Computing Systems 
+  pubnamebrief: ACM TECS
+  year: 2023
+  link: 
+  type: journal
+  highlight: 2
+- title: "Octopus+: an RDMA-enabled Distributed Persistent Memory File System"
+  authors: Bohong Zhu, **Youmin Chen**, Qing Wang, Youyou Lu, Jiwu Shu
+  pubname: ACM Transactions on Storage 
+  pubnamebrief: TOS
+  year: 2021
+  link: /papers/tos21octopus.pdf
+  type: journal
+  highlight: 2
+- title: "TH-DPMS: Design and Implementation of an RDMA-enabled Distributed Persistent Memory Storage System"
+  authors: Jiwu Shu, **Youmin Chen**, Qing Wang, Bohong Zhu, Junru Li, Youyou Lu
+  pubname: ACM Transactions on Storage
+  pubnamebrief: TOS
+  year: 2020
+  link: /papers/tos20dpms.pdf
+  type: journal
+  highlight: 2
+- title: "ShieldNVM: An Efficient and Fast Recoverable System for Secure Non-Volatile Memory"
+  authors: Fan Yang, **Youmin Chen**, Haiyu Mao, Youyou Lu, Jiwu Shu
+  pubname: ACM Transactions on Storage
+  pubnamebrief: TOS
+  year: 2020
+  link: /papers/tos20shieldnvm.pdf
+  type: journal
+  highlight: 2
+- title: "Understanding and analysis of B+ trees on NVM towards consistency and efficiency"
+  authors: Jiangkun Hu, **Youmin Chen**, Youyou Lu, Xubin He, Jiwu Shu
+  pubname: CCF Transactions on High Performance Computing
+  pubnamebrief: CCF-THPC
+  year: 2020
+  link: 
+  type: journal
+  highlight: 0
+- title: "Efficient and Consistent NVMM Cache for SSD-based File System"
+  authors: "**Youmin Chen**, Youyou Lu, Pei Chen, Jiwu Shu"
+  pubname: IEEE Transactions on Computers
+  pubnamebrief: TC
+  year: 2018
+  link: tc18fccm.pdf
+  type: journal
+  highlight: 2
+- title: "HiNFS: A Persistent Memory File System with Both Buffering and Direct-Access"
+  authors: "**Youmin Chen**, Jiwu Shu, Jiaxin Ou, Youyou Lu"
+  pubname: ACM Transactions on Storage
+  pubnamebrief: TOS
+  year: 2018
+  link: /papers/tos18hinfs.pdf
+  type: journal
+  highlight: 2

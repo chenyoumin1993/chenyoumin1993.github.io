@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youmin Chen's Homepage</title>
+    <link rel="icon" href="data:,">
+    
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --wallpaper: #7057e8;
+            --wallpaper-image: url("https://512pixels.net/downloads/macos-wallpapers-6k/12-Light.jpg");
+            --window-bg: rgba(248, 249, 252, 0.97);
+            --window-border: rgba(255, 255, 255, 0.78);
+            --content-bg: rgba(255, 255, 255, 0.96);
+            --sidebar-bg: rgba(238, 241, 247, 0.96);
+            --surface: #ffffff;
+            --surface-strong: #f5f7fb;
+            --surface-hover: #eef5ff;
+            --separator: rgba(60, 60, 67, 0.2);
+            --text-primary: #111827;
+            --text-secondary: #374151;
+            --text-tertiary: #667085;
+            --accent: #0a66d9;
+            --danger: #ff5f57;
+            --warning: #b45309;
+            --success: #188038;
+            --shadow: 0 30px 80px rgba(22, 32, 55, 0.34), 0 4px 18px rgba(22, 32, 55, 0.16);
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { box-sizing: border-box; user-select: none; -webkit-font-smoothing: antialiased; }
+        
+        body {
+            margin: 0; padding: 0; overflow: hidden;
+            font-family: var(--font-main);
+            background-color: var(--wallpaper);
+            background-image: var(--wallpaper-image);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh; width: 100vw;
+            color: var(--text-primary);
+        }
+
+        /* --- MENU BAR --- */
+        #menu-bar {
+            position: absolute; top: 0; width: 100%; height: 28px;
+            background: #000;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0 20px; font-size: 13px; font-weight: 500; z-index: 5000;
+            color: #fff;
+            box-shadow: none;
+        }
+        .menu-left { display: flex; gap: 20px; }
+        .menu-right { display: flex; gap: 15px; }
+        .menu-item:hover { color: rgba(255,255,255,0.82); cursor: default; }
+
+        /* --- DOCK --- */
+        #dock-container {
+            position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+            z-index: 6000;
+        }
+        #dock {
+            display: flex; gap: 12px; padding: 12px;
+            background: rgba(246, 248, 252, 0.48);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
+            border: 1px solid rgba(255,255,255,0.55);
+            border-radius: 24px;
+            box-shadow: 0 18px 44px rgba(44, 61, 96, 0.22), inset 0 1px 0 rgba(255,255,255,0.6);
+        }
+        .dock-icon {
+            width: 55px; height: 55px;
+            border-radius: 14px;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 26px; color: white;
+            cursor: pointer;
+            transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            box-shadow: 0 8px 20px rgba(31, 48, 78, 0.22), inset 0 1px 0 rgba(255,255,255,0.35);
+        }
+        .dock-icon:hover { transform: scale(1.2) translateY(-10px); z-index: 10; }
+        .dock-tooltip {
+            position: absolute; top: -40px; left: 50%; transform: translateX(-50%);
+            background: rgba(29,29,31,0.76); color: #fff; padding: 4px 8px;
+            border-radius: 6px; font-size: 12px; opacity: 0; pointer-events: none; transition: 0.2s;
+            white-space: nowrap;
+        }
+        .dock-icon:hover .dock-tooltip { opacity: 1; top: -50px; }
+        .dock-dot {
+            position: absolute; bottom: -8px; width: 4px; height: 4px;
+            background: rgba(29,29,31,0.7); border-radius: 50%;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .dock-icon.active .dock-dot { opacity: 1; }
+
+        /* Icons */
+        .icon-profile { background: linear-gradient(135deg, #ff7a8a 0%, #ffb36c 100%); }
+        .icon-pubs { background: linear-gradient(135deg, #3d8bfd 0%, #67d4ff 100%); }
+        .icon-research { background: linear-gradient(135deg, #31d158 0%, #65d6c9 100%); }
+        .icon-team { background: linear-gradient(135deg, #5e5ce6 0%, #bf5af2 100%); }
+        .icon-awards { background: linear-gradient(135deg, #ffd60a 0%, #ff9f0a 100%); }
+        .icon-services { background: linear-gradient(135deg, #64d2ff 0%, #0a84ff 100%); }
+
+        /* --- WINDOWS --- */
+        .window {
+            position: absolute;
+            background: var(--window-bg);
+            backdrop-filter: blur(18px) saturate(140%);
+            -webkit-backdrop-filter: blur(18px) saturate(140%);
+            border: 1px solid var(--window-border);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            display: flex; flex-direction: column;
+            overflow: hidden;
+            transition: transform 0.15s, opacity 0.15s;
+            opacity: 0; transform: scale(0.9);
+        }
+        .window.open { opacity: 1; transform: scale(1); }
+        
+        .window-header {
+            height: 40px; flex-shrink: 0;
+            display: flex; align-items: center;
+            padding: 0 15px; border-bottom: 1px solid var(--separator);
+            background: linear-gradient(to bottom, rgba(253,253,255,0.98), rgba(235,238,244,0.98));
+        }
+        .traffic-lights { display: flex; gap: 8px; margin-right: 15px; }
+        .traffic-light { width: 12px; height: 12px; border-radius: 50%; cursor: pointer; }
+        .tl-close { background: var(--danger); }
+        .tl-min { background: var(--warning); }
+        .tl-max { background: var(--success); }
+
+        .window-title { flex-grow: 1; text-align: center; color: rgba(29,29,31,0.62); font-size: 13px; font-weight: 600; pointer-events: none; padding-right: 50px;}
+
+        .window-content {
+            flex-grow: 1; padding: 0; overflow-y: auto;
+            background: var(--content-bg);
+            color: var(--text-primary); font-size: 15px; line-height: 1.6;
+            user-select: text;
+        }
+
+        /* Finder Layout */
+        .layout-sidebar { display: flex; height: 100%; }
+        .sidebar {
+            width: 200px; background: var(--sidebar-bg);
+            border-right: 1px solid var(--separator);
+            padding: 20px 10px; display: flex; flex-direction: column; gap: 5px; flex-shrink: 0;
+        }
+        .sidebar-item {
+            padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px;
+        }
+        .sidebar-item i { width: 16px; flex: 0 0 16px; text-align: center; }
+        .sidebar-item span { flex: 1; text-align: left; }
+        .sidebar-item:hover { background: rgba(0, 122, 255, 0.08); }
+        .sidebar-item.active { background: #dcecff; color: var(--accent); font-weight: 600; }
+        .main-view { flex-grow: 1; padding: 30px; overflow-y: auto; background: var(--content-bg); }
+
+        /* Content Styles */
+        h1 { font-size: 28px; font-weight: 700; margin: 0 0 15px 0; letter-spacing: -0.5px; }
+        h2 { font-size: 18px; font-weight: 600; margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid var(--separator); padding-bottom: 8px; color: var(--accent); text-transform: uppercase; letter-spacing: 1px;}
+        h3 { font-size: 16px; font-weight: 600; margin: 0 0 5px 0; color: var(--text-primary); }
+        p { color: var(--text-secondary); margin-top: 5px; }
+        .markdown-content a {
+            color: #075bb8;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 0 2px;
+            background:
+                linear-gradient(rgba(10, 102, 217, 0.12), rgba(10, 102, 217, 0.12)) 0 100% / 100% 2px no-repeat;
+            transition: color 0.18s ease, background-size 0.18s ease, background-color 0.18s ease;
+        }
+        .markdown-content a:hover {
+            color: #03428a;
+            background-color: rgba(10, 102, 217, 0.1);
+            background-size: 100% 100%;
+        }
+        
+        .profile-header { display: flex; gap: 28px; align-items: center; margin-bottom: 30px; }
+        .profile-pic { width: 150px; height: 220px; border-radius: 10px; object-fit: cover; border: 1px solid #d9dee8; box-shadow: 0 12px 28px rgba(35,48,72,0.18); flex-shrink: 0; }
+        
+        .tag { display: inline-block; background: rgba(0,122,255,0.1); padding: 4px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px; color: var(--accent); text-decoration: none; transition: 0.2s; }
+        .tag:hover { background: var(--accent); color: #fff; }
+
+        /* Card Grid (Team) */
+        .card-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+            gap: 12px; margin-bottom: 30px; padding: 12px; border-radius: 14px;
+            background: linear-gradient(180deg, #f6f9ff 0%, #f3f6fb 100%);
+        }
+        .card {
+            background: rgba(255,255,255,0.72);
+            border-radius: 10px; padding: 14px; transition: 0.2s; display: flex; align-items: center; gap: 16px; text-align: left; min-height: 132px;
+        }
+        .card:hover { background: #ffffff; box-shadow: 0 8px 20px rgba(35,48,72,0.08); transform: translateY(-2px); }
+        .card-avatar { width: 104px; height: 104px; border-radius: 12px; background: linear-gradient(135deg, #e8eef7, #ffffff); display: block; object-fit: cover; box-shadow: 0 1px 4px rgba(35,48,72,0.14); flex: 0 0 auto;}
+        .card-avatar-fallback { padding: 16px; object-fit: contain; }
+        .card-content { min-width: 0; flex: 1; }
+        .card-name { font-weight: 600; color: var(--text-primary); line-height: 1.25; }
+        .card-meta { font-size: 12px; color: var(--accent); margin-top: 4px; line-height: 1.35; overflow-wrap: anywhere; }
+        
+        /* List Item (Awards, Services, Pubs) */
+        .list-item {
+            padding: 15px; border-bottom: 1px solid var(--separator);
+            display: flex; gap: 15px; align-items: flex-start; transition: background 0.2s;
+        }
+        .list-item:hover { background: #f4f8ff; }
+        .list-item:last-child { border-bottom: none; }
+        .list-icon { font-size: 20px; width: 40px; text-align: center; color: var(--text-secondary); margin-top: 2px;}
+        .year-badge { 
+            background: #e8f1ff; padding: 4px 8px; border-radius: 6px; 
+            font-size: 12px; font-family: 'Courier New', monospace; color: var(--accent);
+        }
+
+        /* Research Specific */
+        .research-item {
+            background: var(--surface); border-radius: 12px; overflow: hidden;
+            margin-bottom: 25px; display: flex; border: 1px solid #d9dee8;
+        }
+        .research-img {
+            width: 250px; min-height: 200px; object-fit: cover; border-right: 1px solid var(--separator);
+        }
+        .research-content { padding: 25px; flex-grow: 1; }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(60,60,67,0.26); border-radius: 4px; }
+        
+        @media (max-width: 768px) {
+            .window { width: 95% !important; height: 85% !important; left: 2.5% !important; top: 5% !important; }
+            .layout-sidebar { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; flex-direction: row; overflow-x: auto; }
+            .profile-header { flex-direction: column; align-items: flex-start; }
+            .profile-pic { width: min(100%, 220px); height: 300px; }
+            .card-grid { grid-template-columns: 1fr; }
+            .card { min-height: 112px; gap: 12px; }
+            .card-avatar { width: 88px; height: 88px; border-radius: 10px; }
+            .research-item { flex-direction: column; }
+            .research-img { width: 100%; height: 150px; border-right: none; border-bottom: 1px solid var(--separator); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU BAR -->
+    <div id="menu-bar">
+        <div class="menu-left">
+            <div class="menu-item" style="font-weight:700"><i class="fa-brands fa-apple"></i></div>
+            <div class="menu-item" id="menu-app-name">Finder</div>
+      <!--  <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Go</div>
+            <div class="menu-item">Help</div> -->
+        </div>
+        <div class="menu-right">
+         <!--    <div class="menu-item"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="menu-item"><i class="fa-solid fa-wifi"></i></div> -->
+            <div class="menu-item" id="clock">Mon Jan 1 10:00 AM</div>
+        </div>
+    </div>
+
+    <!-- DOCK -->
+    <div id="dock-container">
+        <div id="dock">
+            <!-- JS Generated -->
+        </div>
+    </div>
+
+    <script>
+        // --- SETUP ---
+        const $ = s => document.querySelector(s);
+        let data = {};
+        let zIndexCounter = 100;
+        let windows = {};
+        const appOrder = ['profile', 'pubs', 'research', 'team', 'awards', 'misc'];
+
+        window.onload = async () => {
+            try {
+                data = await loadSiteData();
+                initOS();
+            } catch (e) {
+                console.error("YAML Error:", e);
+                showDataLoadError(e);
+            }
+        };
+
+        async function loadSiteData() {
+            const response = await fetch('data.yml', { cache: 'no-store' });
+            if (!response.ok) {
+                throw new Error(`Unable to load data.yml (${response.status})`);
+            }
+            return jsyaml.load(await response.text());
+        }
+
+        function showDataLoadError(error) {
+            document.body.insertAdjacentHTML('beforeend', `
+                <div style="position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.72); color:#fff; text-align:center; line-height:1.6; padding:24px;">
+                    <div style="max-width:420px;">
+                        <div style="font-size:42px; margin-bottom:16px;"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        Failed to load <strong>data.yml</strong>.<br>
+                        Serve this folder with a local web server, then open windows.html through that server.
+                    </div>
+                </div>
+            `);
+        }
+
+        function initOS() {
+            renderDock();
+            startClock();
+            openApp('profile');
+        }
+
+        // --- APP CONTENT ---
+        const apps = {
+            profile: {
+                title: "Profile", icon: "fa-user", color: "icon-profile",
+                content: () => `
+                    <div class="profile-header">
+                        <img src="${data.profile.avatar_url}" class="profile-pic">
+                        <div>
+                            <h1>${data.profile.name}</h1>
+                            <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">${data.profile.role}</div>
+                            <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">${data.profile.university}</div>
+                            <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">Office: ${data.profile.office}</div>
+                            <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">${data.profile.email}</div>
+                            <div style="margin-top:10px;">
+                                ${data.profile.socials.map(s => `<a href="${s.url}" class="tag"><i class="fa-brands ${s.icon}"></i> ${s.name}</a>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>About</h3>
+                    <div class="markdown-content" style="font-size:16px; line-height:1.7;">${marked.parse(data.profile.bio)}</div>
+                `
+            },
+            pubs: {
+                title: "Publications", icon: "fa-book", color: "icon-pubs",
+                content: () => `
+                    <h1>Publications</h1>
+                    <div style="margin-top:auto; font-size:12px; color:var(--text-tertiary); text-align:left;">* indicates corresponding authors, # indicates contributing equally.</div>
+                    <h2>Conference Papers</h2>
+                    ${data.conference.map(p => `
+                        <div class="list-item">
+                            <div class="list-icon"><i class="fa-regular fa-file-lines"></i></div>
+                            <div style="flex-grow:1;">
+                                <div style="font-weight:600; color:var(--text-primary); font-size:16px;">${p.title}</div>
+                                <div style="color:var(--text-secondary); font-size:14px; margin-top:3px;">${marked.parseInline(p.authors)}</div>
+                                <div style="color:var(--text-secondary); font-size:14px; margin-top:3px;">${p.pubname}, ${p.year}</div>
+                                <div style="margin-top:5px; display:flex; gap:10px; align-items:center;">
+                                    <span class="year-badge" style="font-weight: bold;">${p.pubnamebrief}</span>
+                                    ${p.link ? `<span class="year-badge"><a href="${p.link}" style="font-weight: bold;">[Paper]</a></span>` : ''}
+                                    ${p.slide ? `<span class="year-badge"><a href="${p.slide} " style="font-weight: bold;">[Slides]</a></span>` : ''}
+                                    ${p.tag ? `<span style="color:var(--warning); font-size:12px;"> ${p.tag}</span>` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                    <h2>Journal Papers</h2>
+                    ${data.journal.map(p => `
+                        <div class="list-item">
+                            <div class="list-icon"><i class="fa-regular fa-file-lines"></i></div>
+                            <div style="flex-grow:1;">
+                                <div style="font-weight:600; color:var(--text-primary); font-size:16px;">${p.title}</div>
+                                <div style="color:var(--text-secondary); font-size:14px; margin-top:3px;">${marked.parseInline(p.authors)}</div>
+                                <div style="color:var(--text-secondary); font-size:14px; margin-top:3px;">${p.pubname}, ${p.year}</div>
+                                <div style="margin-top:5px; display:flex; gap:10px; align-items:center;">
+                                    <span class="year-badge" style="font-weight: bold;">${p.pubnamebrief}</span>
+                                    ${p.tag ? `<span class="year-badge" style="font-weight: bold;">${p.tag}</span>` : ''}
+                                    ${p.link ? `<a href="${p.link}"><span class="year-badge" style="font-weight: bold;">Paper</span></a>` : ''}
+                                    ${p.slides ? `<a href="${p.link}"><span class="year-badge" style="font-weight: bold;">Slides</span></a>` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                `
+            },
+            research: {
+                title: "Research", icon: "fa-microscope", color: "icon-research",
+                content: () => `
+                    <h1>Current Research</h1>
+                    ${data.research.map(r => `
+                        <div class="research-item">
+                            <img src="${r.image}" class="research-img">
+                            <div class="research-content">
+                                <h3>${r.title}</h3>
+                                <div class="markdown-content" style="color:var(--text-secondary); font-size:14px; line-height:1.6;">${marked.parse(r.desc)}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                    <h1>Past Research Directions</h1>
+                    ${data.pastresearch.map(r => `
+                        <div class="research-item">
+                            <img src="${r.image}" class="research-img">
+                            <div class="research-content">
+                                <h3>${r.title}</h3>
+                                <div class="markdown-content" style="color:var(--text-secondary); font-size:14px; line-height:1.6;">${marked.parse(r.desc)}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                `
+            },
+            team: {
+                title: "Team", icon: "fa-users", color: "icon-team",
+                content: () => {
+                    const avatarFor = (member) => {
+                        if (member.avatar_url || member.avatar) {
+                            return { src: member.avatar_url || member.avatar, fallback: false };
+                        }
+                        const initials = member.name
+                            .split(/\s+/)
+                            .filter(Boolean)
+                            .slice(0, 2)
+                            .map(part => part.charAt(0).toUpperCase())
+                            .join('');
+                        const svg = `
+                            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+                                <defs>
+                                    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                                        <stop stop-color="#dcecff"/>
+                                        <stop offset="1" stop-color="#ffffff"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="128" height="128" rx="64" fill="url(#g)"/>
+                                <text x="64" y="73" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#0a66d9">${initials}</text>
+                            </svg>
+                        `;
+                        return { src: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`, fallback: true };
+                    };
+                    const renderGroup = (title, list) => {
+                        if(!list) return '';
+                        return `
+                            <h2>${title}</h2>
+                            <div class="card-grid">
+                                ${list.map(m => {
+                                    const avatar = avatarFor(m);
+                                    return `
+                                    <div class="card">
+                                        <img src="${avatar.src}" alt="${m.name}" class="card-avatar ${avatar.fallback ? 'card-avatar-fallback' : ''}" loading="lazy">
+                                        <div class="card-content">
+                                            <div class="card-name">${m.name}</div>
+                                            <div class="card-meta">${m.year}</div>
+                                            <div class="card-meta">B.S from ${m.bs}</div>
+                                            ${m.tag ? `<div class="card-meta">${m.tag}</div>` : ''}
+                                        </div>
+                                    </div>
+                                `}).join('')}
+                            </div>
+                        `;
+                    };
+                    return `
+                        <h1>SOAR Group Members</h1>
+                        <p style="margin-bottom:20px">I lead the Storage, Operating, and AI Systems Research (SOAR) group, focusing on innovative approaches to system design that prioritize efficiency, scalability, and resilience.</p>
+                        ${renderGroup('PhD Students', data.team.phd)}
+                        ${renderGroup('Master Students', data.team.master)}
+                        ${renderGroup('Undergrad & Interns', data.team.undergrad)}
+                    `;
+                }
+            },
+            awards: {
+                title: "Awards", icon: "fa-award", color: "icon-awards",
+                content: () => `
+                    <h1>Honors & Awards</h1>
+                    ${data.awards.map(a => `
+                        <div class="list-item">
+                            <div class="list-icon" style="color:var(--warning)"><i class="fa-solid fa-medal"></i></div>
+                            <div>
+                                <div style="font-weight:600; color:var(--text-primary);">${a.title}</div>
+                                ${a.desc ? `<div style="color:var(--text-secondary); font-size:13px;">${a.desc}</div>` : ''}
+                                <span class="year-badge" style="margin-top:5px; display:inline-block;">${a.year}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                `
+            },
+            misc: {
+                title: "Misc", icon: "fa-handshake", color: "icon-services",
+                content: () => `
+                    <h1>Professional Services</h1>
+                    ${data.services.map(s => `
+                        <div class="list-item">
+                            <div class="list-icon" style="color:var(--success)"><i class="fa-solid fa-check-double"></i></div>
+                            <div>
+                                <div style="font-weight:600; color:var(--text-primary);">${s.title}</div>
+                                <div style="font-size:12px; color:var(--accent); margin-bottom:2px;">${s.context}</div>
+                                <div style="color:var(--text-secondary); font-size:13px;">${s.desc}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                    <h1>Teaching</h1>
+                    ${data.teaching.map(t => `
+                        <div class="list-item">
+                            <div class="list-icon" style="color:var(--success)"><i class="fa-solid fa-check-double"></i></div>
+                            <div>
+                                <div style="font-weight:600; color:var(--text-primary);">${t.title}</div>
+                                <div style="color:var(--text-secondary); font-size:13px;">${t.year}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                `
+            }
+        };
+
+        // --- WINDOW MANAGER ---
+        function openApp(key) {
+            const app = apps[key];
+            
+            if (windows[key]) {
+                focusWindow(key);
+                switchWindowApp(key, key);
+                return;
+            }
+
+            const w = Math.min(window.innerWidth * 0.75, 1100);
+            const h = Math.min(window.innerHeight * 0.85, 800);
+            const left = (window.innerWidth - w) / 2;
+            const top = (window.innerHeight - h) / 2;
+
+            const win = document.createElement('div');
+            win.className = 'window';
+            win.id = `win-${key}`;
+            win.style.zIndex = ++zIndexCounter;
+            win.style.width = w + 'px';
+            win.style.height = h + 'px';
+            win.style.left = left + 'px';
+            win.style.top = top + 'px';
+            win.dataset.activeApp = key;
+
+            win.innerHTML = `
+                <div class="window-header" onmousedown="dragStart(event, '${key}')">
+                    <div class="traffic-lights">
+                        <div class="traffic-light tl-close" onclick="closeWindow('${key}')"></div>
+                        <div class="traffic-light tl-min" onclick="minimizeWindow('${key}')"></div>
+                        <div class="traffic-light tl-max" onclick="maximizeWindow('${key}')"></div>
+                    </div>
+                    <div class="window-title">${app.title}</div>
+                </div>
+                <div class="window-content">
+                    <div class="layout-sidebar">
+                        <div class="sidebar">
+                            ${renderSidebar(key)}
+                            <div style="margin-top:auto; font-size:10px; color:var(--text-tertiary); text-align:center;">Code generated by ChatGPT</div>
+                        </div>
+                        <div class="main-view">
+                            ${app.content()}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            win.addEventListener('mousedown', () => focusWindow(key));
+            document.body.appendChild(win);
+            windows[key] = win;
+            
+            requestAnimationFrame(() => win.classList.add('open'));
+            updateDock(key, true);
+            $('#menu-app-name').innerText = app.title;
+        }
+
+        function switchWindowApp(windowKey, appKey) {
+            const win = windows[windowKey];
+            const app = apps[appKey];
+            if (!win || !app) return;
+
+            win.dataset.activeApp = appKey;
+            win.querySelector('.window-title').innerText = app.title;
+            win.querySelector('.main-view').innerHTML = app.content();
+            win.querySelectorAll('.sidebar-item').forEach(item => {
+                item.classList.toggle('active', item.dataset.app === appKey);
+            });
+            $('#menu-app-name').innerText = app.title;
+        }
+
+        function closeWindow(key) {
+            const win = windows[key];
+            if (!win) return;
+            win.style.opacity = 0;
+            win.style.transform = "scale(0.95)";
+            setTimeout(() => {
+                win.remove();
+                delete windows[key];
+                updateDock(key, false);
+                $('#menu-app-name').innerText = "Finder";
+            }, 200);
+        }
+
+        function minimizeWindow(key) {
+            const win = windows[key];
+            win.style.transform = "translateY(50vh) scale(0.2)";
+            win.style.opacity = 0;
+        }
+
+        function maximizeWindow(key) {
+            const win = windows[key];
+            if (win.classList.contains('max')) {
+                win.style.width = win.dataset.w;
+                win.style.height = win.dataset.h;
+                win.style.top = win.dataset.t;
+                win.style.left = win.dataset.l;
+                win.classList.remove('max');
+                win.style.borderRadius = "12px";
+            } else {
+                win.dataset.w = win.style.width;
+                win.dataset.h = win.style.height;
+                win.dataset.t = win.style.top;
+                win.dataset.l = win.style.left;
+                win.style.width = "100%";
+                win.style.height = "calc(100% - 28px)";
+                win.style.top = "28px";
+                win.style.left = "0";
+                win.classList.add('max');
+                win.style.borderRadius = "0";
+            }
+        }
+
+        function focusWindow(key) {
+            const win = windows[key];
+            if(win) {
+                win.style.zIndex = ++zIndexCounter;
+                win.style.transform = "translateY(0) scale(1)";
+                win.style.opacity = 1;
+                $('#menu-app-name').innerText = apps[key].title;
+            }
+        }
+
+        // --- UTILS ---
+        function renderSidebar(activeKey) {
+            return appOrder.map(key => `
+                <div class="sidebar-item ${key === activeKey ? 'active' : ''}" data-app="${key}" onclick="switchWindowApp(this.closest('.window').id.replace('win-', ''), '${key}')">
+                    <i class="fa-solid ${apps[key].icon}"></i><span>${apps[key].title}</span>
+                </div>
+            `).join('');
+        }
+
+        function renderDock() {
+            const dock = $('#dock');
+            appOrder.forEach(key => {
+                const btn = document.createElement('div');
+                btn.className = `dock-icon ${apps[key].color}`;
+                btn.id = `dock-${key}`;
+                btn.innerHTML = `<i class="fa-solid ${apps[key].icon}"></i><div class="dock-tooltip">${apps[key].title}</div><div class="dock-dot"></div>`;
+                btn.onclick = () => openApp(key);
+                dock.appendChild(btn);
+            });
+        }
+
+        function updateDock(key, active) {
+            const btn = $(`#dock-${key}`);
+            if(active) btn.classList.add('active');
+            else btn.classList.remove('active');
+        }
+
+        function dragStart(e, key) {
+            e.preventDefault();
+            const win = windows[key];
+            focusWindow(key);
+            if(win.classList.contains('max')) return;
+            
+            let startX = e.clientX;
+            let startY = e.clientY;
+            let startLeft = win.offsetLeft;
+            let startTop = win.offsetTop;
+
+            function dragMove(e) {
+                win.style.left = (startLeft + e.clientX - startX) + "px";
+                win.style.top = (startTop + e.clientY - startY) + "px";
+            }
+
+            function dragEnd() {
+                document.removeEventListener('mousemove', dragMove);
+                document.removeEventListener('mouseup', dragEnd);
+            }
+            document.addEventListener('mousemove', dragMove);
+            document.addEventListener('mouseup', dragEnd);
+        }
+
+        function startClock() {
+            setInterval(() => {
+                const d = new Date();
+                $('#clock').innerText = d.toLocaleTimeString([], {weekday: 'short', hour: '2-digit', minute:'2-digit'});
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
