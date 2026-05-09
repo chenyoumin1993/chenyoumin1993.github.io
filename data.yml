@@ -256,7 +256,7 @@ conference:
   type: conference
   highlight: 1
 - title: "Crash Consistency in Block-Level Caching Systems: An Open CAS  Case Study"
-  authors: Shaohua Duan, Youmin Chen
+  authors: Shaohua Duan, **Youmin Chen**\*
   corresponding: Youmin Chen
   pubname: The 2025 USENIX Annual Technical Conference
   pubnamebrief: USENIX ATC'25
