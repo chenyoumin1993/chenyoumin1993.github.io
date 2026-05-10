@@ -1,5 +1,5 @@
 profile:
-  name: "Youmin Chen"
+  name: "Youmin Chen  陈游旻"
   role: "Tenure-track Associate Professor"
   university: "Department of Computer Sciences, SJTU"
   email: "chenyoumin at sjtu dot edu dot cn"
@@ -8,27 +8,32 @@ profile:
   avatar_url: "/images/cym.jpg"
   bio: |
 
-    I am a tenure-track associate professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 
+    I am a Tenure-Track Associate Professor at the [Department of Computer Science and Engineering](https://www.cs.sjtu.edu.cn/), 
     [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/). 
     I lead the Storage, Operating, and AI Systems Research (**SOAR**) group,
     and am a member of the [Data Driven Software Technology (DDST) Lab](https://ddst.sjtu.edu.cn/).
     I build fast and robust next-gen data and storage systems.
     My work has appeared at top systems venues such as SOSP, FAST, ASPLOS, Eurosys, USENIX ATC, SIGMOD, VLDB, etc.
     My current research interests lie at the intersection of storage systems and the following three disciplines:
-
-    **Storage &times; OS**: **New abstractions** with enhanced flexibility, programmability, and schedulability.
-
-    **Storage &times; H/W**: **New systems** with faster interactions between hardware and software.
-
-    **Storage &times; AI**: **New applications** (e.g., LLM/agents) through algorithm–storage co-design.
-
+    
+    + **Storage &times; OS**: **new abstractions** with enhanced flexibility, programmability, and schedulability.
+    + **Storage &times; H/W**: **new systems** with faster interactions between hardware and software.
+    + **Storage &times; AI**: **new applications** (e.g., LLM/agents) through algorithm–storage co-design.
+    
     I received my Ph.D. degree in Computer Science from Tsinghua University, advised by ([Jiwu Shu](http://storage.cs.tsinghua.edu.cn/~jiwu-shu) 
     and [Youyou Lu](http://storage.cs.tsinghua.edu.cn/~lu)), and Bachelor’s degree from [Honors College (formerly School of Advanced 
     Engineering)](http://hc.buaa.edu.cn/), at [Beihang University](http://www.buaa.edu.cn). From 2021 to 2024, I was a postdoctoral researcher at Tsinghua University. Earlier, from 2019 to 2020, I was a visiting scholar in the ADSL lab at the University of Wisconsin–Madison, working with Professors [Remzi Arpaci-Dusseau](http://pages.cs.wisc.edu/~remzi/) and [Andrea Arpaci-Dusseau](http://pages.cs.wisc.edu/~dusseau/).
   socials:
-    - { name: "Google Scholar", icon: "fa-graduation-cap", url: "https://scholar.google.com/citations?user=mzdyg24AAAAJ&hl=zh-CN" }
-    - { name: "GitHub", icon: "fa-github", url: "https://github.com/chenyoumin1993" }
-    - { name: "DBLP", icon: "fa-database", url: "https://dblp.org/pid/203/1564.html" }
+    - { name: "Google Scholar", icon: "fas fa-graduation-cap", url: "https://scholar.google.com/citations?user=mzdyg24AAAAJ&hl=zh-CN" }
+    - { name: "GitHub", icon: "fab fa-github", url: "https://github.com/chenyoumin1993" }
+    - { name: "DBLP", icon: "fas fa-database", url: "https://dblp.org/pid/203/1564.html" }
+  recruitment: |
+
+    I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. If you are interested, please refer to the [PDF](/static_files/recruitment_v4.pdf) and don't hesitate to reach out via email.
+    
+    招收2027年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考[链接](/static_files/recruitment_v4.pdf)。
+
+    <font color="red">长期有效</font>：欢迎本校大二/大三本科生加入课题组开展系统方向的科研工作，方式包括但不限于PRP项目、毕业设计等。
 
 news:
   - date: Nov, 2025
@@ -278,9 +283,57 @@ awards:
     desc: 9 out of 100+ PhD students in the CS Department
     year: 2020
 
+fundings:
+  - title: 面向国产智算系统的网存算融合加速方法
+    agency: 国家重点研发计划青年科学家项目
+    date: 2026 - 2029
+    role: PI
+  - title: 面向分离式架构的低碳存储关键技术研究
+    agency: 国家自然科学基金面上基金
+    date: 2026 - 2029
+    role: PI
+  - title: 面向异构融合OS的新型分离式进程抽象技术
+    agency: 华为横向合作项目
+    date: 2025 - 2026
+    role: PI
+  - title: 基于高速互联总线内存语义的高性能RPC技术
+    agency: CCF-华为胡杨林基金系统软件专项
+    date: 2025 - 2026
+    role: PI
+  - title: MaaS场景的存储和计算任务协同优化机制
+    agency: 阿里横向合作项目
+    date: 2025 - 2026
+    role: PI
+  - title: 面向跨广域协同推理的KVCache分布式部署网络架构分析与设计
+    agency: 华为横向合作项目
+    date: 2024 - 2025 (已结题)
+    role: PI
+  - title: ExploreX基金
+    agency: 上海交通大学-华为
+    date: 2024 - 2027
+    role: PI
+  - title: 分布式异构内存池化操作系统及关键技术
+    agency: 国家重点研发计划重点专项子课题
+    date: 2022 - 2025 (已结题)
+    role: PI
+  - title: 面向硬件资源解耦的存储系统关键技术研究
+    agency: 国家自然科学基金青年基金
+    date: 2022 - 2025
+    role: PI
+  - title: 解耦合数据中心架构的高效存储系统关键技术研究
+    agency: 中国博士后创新人才支持计划
+    date: 2021 - 2023
+    role: PI
+  - title: 基于异构存储硬件的分层存储技术研究
+    agency: 博士后科学基金面上项目
+    date: 2021 - 2023
+    role: PI
+  - title: TB级持久性内存存储技术与系统
+    agency: 国家重点研发计划重点专项项目
+    date: 2018 - 2021
+    role: 参与
+
 conference:
-
-
 - title: "zBuffer: Zero-Copy and Metadata-Free Serialization for Fast RPC with Scatter-Gather Reflection"
   authors: Xiangyu Liu, Huiba Li, Shun Gai, **Youmin Chen**\*, Yiming Zhang\*
   pubname: The ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming

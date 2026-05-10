@@ -9,7 +9,7 @@
     <!-- Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -292,7 +292,6 @@
             background: #e8f1ff; padding: 4px 8px; border-radius: 6px; 
             font-size: 12px; font-family: 'Courier New', monospace; color: var(--accent);
         }
-
         /* Research Specific */
         .research-item {
             background: var(--surface); border-radius: 12px; overflow: hidden;
@@ -410,14 +409,12 @@
                             <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">Office: ${data.profile.office}</div>
                             <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">${data.profile.email}</div>
                             <div style="margin-top:10px;">
-                                ${data.profile.socials.map(s => `<a href="${s.url}" class="tag"><i class="fa-brands ${s.icon}"></i> ${s.name}</a>`).join('')}
+                                ${data.profile.socials.map(s => `<a href="${s.url}" class="tag"><i class="${s.icon}"></i> ${s.name}</a>`).join('')}
                             </div>
                         </div>
                     </div>
                     
-                    <p class="recruitment-note">I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. 
-                        If you are interested, please refer to the <a href="/static_files/recruitment_v4.pdf">details</a> and don't hesitate to reach out via email.
-                        [招收2027年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考<a href="/static_files/recruitment_v4.pdf">链接</a>；长期有效：欢迎本校大二/大三本科生加入课题组开展系统方向的科研工作，方式包括但不限于PRP项目、毕业设计等]</p>
+                    <div class="markdown-content recruitment-note">${marked.parse(data.profile.recruitment)}</div>
 
                     <h2>About</h2>
                     <div class="markdown-content" style="font-size:16px; line-height:1.7;">${marked.parse(data.profile.bio)}</div>
@@ -566,7 +563,8 @@
             misc: {
                 title: "Misc", icon: "fa-handshake", color: "icon-services",
                 content: () => `
-                    <h1>Professional Services</h1>
+                    <h1>Miscellaneous</h1>
+                    <h2>Professional Services</h2>
                     ${data.services.map(s => `
                         <div class="list-item">
                             <div class="list-icon" style="color:var(--success)"><i class="fa-solid fa-check-double"></i></div>
@@ -577,19 +575,41 @@
                             </div>
                         </div>
                     `).join('')}
-                    <h1>Teaching</h1>
+                    <h2>Teaching</h2>
                     ${data.teaching.map(t => `
                         <div class="list-item">
-                            <div class="list-icon" style="color:var(--success)"><i class="fa-solid fa-check-double"></i></div>
+                            <div class="list-icon" style="color:var(--success)"><i class="fa-solid fa-chalkboard-user"></i></div>
                             <div>
                                 <div style="font-weight:600; color:var(--text-primary);">${t.title}</div>
                                 <div style="color:var(--text-secondary); font-size:13px;">${t.year}</div>
                             </div>
                         </div>
                     `).join('')}
+                    ${renderFundings()}
                 `
             }
         };
+
+        function renderFundings() {
+            const fundings = data.fundings || [];
+            if (!fundings.length) return '';
+
+            return `
+                <h2>Fundings</h2>
+                ${fundings.map(f => `
+                    <div class="list-item">
+                        <div class="list-icon" style="color:var(--success)"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <div>
+                            <div style="font-weight:600; color:var(--text-primary);">${f.title || ''}</div>
+                            <div style="font-size:12px; color:var(--accent); margin-bottom:2px;">${f.agency || ''}</div>
+                            <div style="color:var(--text-secondary); font-size:13px;">
+                                ${[f.date, f.role].filter(Boolean).join(' · ')}
+                            </div>
+                        </div>
+                    </div>
+                `).join('')}
+            `;
+        }
 
         function renderNews() {
             const news = (data.news || []).slice(0, 10);
