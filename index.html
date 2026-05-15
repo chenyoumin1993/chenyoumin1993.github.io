@@ -207,7 +207,7 @@
         }
         
         .profile-header { display: flex; gap: 28px; align-items: center; margin-bottom: 30px; }
-        .profile-pic { width: 150px; height: 220px; border-radius: 10px; object-fit: cover; border: 1px solid #d9dee8; box-shadow: 0 12px 28px rgba(35,48,72,0.18); flex-shrink: 0; }
+        .profile-pic { width: 165px; height: 220px; margin-right: 25px; border-radius: 10px; object-fit: cover; border: 1px solid #d9dee8; box-shadow: 0 12px 28px rgba(35,48,72,0.18); flex-shrink: 0; }
         .recruitment-note {
             margin: -4px 0 28px 0;
             padding: 14px 16px;
@@ -407,7 +407,7 @@
                             <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">${data.profile.role}</div>
                             <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">${data.profile.university}</div>
                             <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">Office: ${data.profile.office}</div>
-                            <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">${data.profile.email}</div>
+                            <div style="font-size:16px;margin-top:5px; color:var(--text-secondary);">Email: ${data.profile.email}</div>
                             <div style="margin-top:10px;">
                                 ${data.profile.socials.map(s => `<a href="${s.url}" class="tag"><i class="${s.icon}"></i> ${s.name}</a>`).join('')}
                             </div>
