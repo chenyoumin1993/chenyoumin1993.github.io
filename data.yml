@@ -219,7 +219,7 @@ research:
 
 pastresearch:
   - title: "Networked Memory Architecture (2017 - 2020)"
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "/images/storage-hw.jpg"
     desc: |
       As the storage and network technologies evolve rapidly, the CPU performance remains comparatively stagnant as Moore's law slows in the past years. Due to this reason, the CPU running with the heavy-weight storage software can easily become the bottleneck. We tackle this problem from various aspects.
 
@@ -227,14 +227,14 @@ pastresearch:
       - RDMA-enabled distributed persistent shared memory (or DPSM) (Octopus[[USENIX ATC'17, TOS'20]](/papers/atc17-octopus.pdf)).
       - RDMA-based RPC system with scalability and reliablity (ScaleRPC[[EuroSys'19]](/papers/eurosys19-scalerpc.pdf))
   - title: "CPU-efficient IO Engine (2020 - 2024)"
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "/images/storage-os.jpg"
     desc: |
       Purely reducing the overhead of storage software is still not enough; system designers must be also device-aware since the emerging hardware typically exhibits bizarre performance behavior. For example, non-volatile storage devices have asymmetric read/write performance, device-level IO amplification, and performance variability; in this context, we designed: 
       
       - a holistic IO stack design for computational storage devices (&lambda;-IO[[FAST'23]](/papers/fast23-yang-zhe.pdf))
       - a key-value store that uses compacted log to mitigate the IO amplification (FlatStore[[ASPLOS'20]](/papers/asplos20-flatstore.pdf)) 
   - title: "Low Tail Latency Concurrency Control (2020 - 2024)"
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    image: "/images/storage-ai.jpg"
     desc: |
       Apart from seeking higher throughput and lower latency, datacenter applications also require their performance to be predictable (often defined as 99th or 99.9th percentile latencies). Latency variability can arise for many reasons, including sharing resources (e.g., CPU cores, caches, memory bandwidth, etc.), background activities, queuing, and others. In the past years, we have witnessed an active line of research work that improves performance predictability at different layers, but they ignore the fact that the workload is another source of incurring latency spikes due to request conflicts. Here, I take a much deeper dive to the concurrency protocol design with the workload-aware principle in mind. 
       - *coordinated concurrency control* for tree-based index structures (&mu;Tree[[VLDB'20]](/papers/vldb20-utree.pdf)) 
