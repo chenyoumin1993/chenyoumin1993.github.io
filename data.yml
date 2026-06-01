@@ -335,7 +335,7 @@ fundings:
 
 conference:
 - title: "HEXA: A Disjoint-Subgraph-Based Indexing Framework for Approximate Nearest Neighbor Search at Billion Scale"
-  authors: Yifei Xu, Yanyan Shen, **Youmin Chen**\*, Linpeng Huang
+  authors: Yifei Xu, Yanyan Shen, **Youmin Chen**, Linpeng Huang
   pubname: The 52nd International Conference on Very Large Data Bases
   pubnamebrief: VLDB'26
   year: 2026
