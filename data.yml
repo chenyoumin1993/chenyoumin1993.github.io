@@ -342,6 +342,14 @@ fundings:
     role: 参与
 
 conference:
+- title: "HEXA: A Disjoint-Subgraph-Based Indexing Framework for Approximate Nearest Neighbor Search at Billion Scale"
+  authors: Yifei Xu, Yanyan Shen, **Youmin Chen**, Linpeng Huang
+  pubname: The 52nd International Conference on Very Large Data Bases
+  pubnamebrief: VLDB'26
+  year: 2026
+  link: https://vldb.org/2026/
+  type: conference
+  highlight: 1
 - title: "zBuffer: Zero-Copy and Metadata-Free Serialization for Fast RPC with Scatter-Gather Reflection"
   authors: Xiangyu Liu, Huiba Li, Shun Gai, **Youmin Chen**\*, Yiming Zhang\*
   pubname: The ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
