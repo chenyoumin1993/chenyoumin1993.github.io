@@ -1,0 +1,10 @@
+title: Youmin Chen's Homepage
+url: "https://chenyoumin1993.github.io"
+
+exclude:
+  - ".DS_Store"
+  - "**/.DS_Store"
+  - "vendor/cache/"
+  - "vendor/bundle/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
