@@ -36,6 +36,10 @@ profile:
     <font color="red">长期有效</font>：欢迎本校大二/大三本科生加入课题组开展系统方向的科研工作，方式包括但不限于PRP项目、毕业设计等。
 
 news:
+  - date: July, 2026
+    title: One paper has been accepted to SOSP'26.
+  - date: June, 2026
+    title: One paper has been accepted to VLDB'26.
   - date: Nov, 2025
     title: One paper has been accepted to PPoPP'26.
   - date: Sept, 2025
@@ -342,6 +346,14 @@ fundings:
     role: 参与
 
 conference:
+- title: "Anchor: Mitigating Shallow Disruptions with Decoupled Memory"
+  authors: Haoyi Ma, Shiwei Gao, **Youmin Chen**, Junrong Huang, Youyou Lu, Jiwu Shu
+  pubname: The 32nd Symposium on Operating Systems Principles
+  pubnamebrief: SOSP'26
+  year: 2026
+  link: https://sigops.org/s/conferences/sosp/2026/
+  type: conference
+  highlight: 1
 - title: "HEXA: A Disjoint-Subgraph-Based Indexing Framework for Approximate Nearest Neighbor Search at Billion Scale"
   authors: Yifei Xu, Yanyan Shen, **Youmin Chen**, Linpeng Huang
   pubname: The 52nd International Conference on Very Large Data Bases
