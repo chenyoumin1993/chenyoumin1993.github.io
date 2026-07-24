@@ -100,13 +100,13 @@ team:
       avatar_url: /images/fx.jpg
       # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
     - name: Xingkun Fan
-      year: Incoming Fall 2026
+      year: Since 2026
       type: PhD
       bs: BUAA
       avatar_url: /images/fxk.jpg
       # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
     - name: Sundi Guan
-      year: Incoming Fall 2026
+      year: Since 2026
       type: PhD
       bs: NWPU
       avatar_url: /images/gsd.jpg
@@ -158,13 +158,13 @@ team:
       avatar_url: /images/default.png
       # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
     - name: Jincheng Cao
-      year: Incoming Fall 2026
+      year: Since 2026
       type: Master
       bs: HIT (ShenZhen)
       avatar_url: /images/cjc.png
       # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
     - name: Peiyu He
-      year: Incoming Fall 2026
+      year: Since 2026
       type: Master
       bs: SJTU
       tag: co-advised w/ Prof. Yiming Zhang
@@ -259,8 +259,12 @@ services:
     desc: TOCS, TPDS, TC, TOS, JSA, etc.
 
 teaching:
-  - title: CS1501 (C++ Programming - Ideas and Methods)
-    year: 2025, 2026
+  - title: CS7366, Advanced Storage Technoligies for AI Infrastructure
+    year: 2026Fall
+  - title: CS1502H, C++ Programming - Ideas and Methods (for Zhiyuan Honors Program)
+    year: 2026Fall
+  - title: CS1501, C++ Programming - Ideas and Methods
+    year: 2025Spring, 2026Spring
 
 awards:
   - title: ACM SIGOPS ChinaSys Rising Star Award
