@@ -31,7 +31,7 @@ profile:
 
     I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. If you are interested, please refer to the [PDF](/static_files/recruitment_v4.pdf) and don't hesitate to reach out via email.
     
-    招收2027年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考[链接](/static_files/recruitment_v4.pdf)。
+    招收2028年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考[链接](/static_files/recruitment_v4.pdf)。
 
     <font color="red">长期有效</font>：欢迎本校大二/大三本科生加入课题组开展系统方向的科研工作，方式包括但不限于PRP项目、毕业设计等。
 
@@ -111,6 +111,12 @@ team:
       bs: NWPU
       avatar_url: /images/gsd.jpg
       # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Yuheng He
+      year: Incoming, 2027
+      type: PhD
+      bs: USTC
+      avatar_url: /images/default.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
     - name: Minrui Tang
       year: Since 2025
       type: PhD
@@ -169,6 +175,18 @@ team:
       bs: SJTU
       tag: co-advised w/ Prof. Yiming Zhang
       avatar_url: /images/hpy.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Siyuan Xu
+      year: Incoming, 2027
+      type: Master
+      bs: TongjiU
+      avatar_url: /images/default.png
+      # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
+    - name: Minghao Liu
+      year: Incoming, 2027
+      type: Master
+      bs: BUAA
+      avatar_url: /images/default.png
       # webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
   undergrad:
     - name: Xunuo Wang
@@ -247,7 +265,7 @@ pastresearch:
 services:
   - title: Program Committee Member
     context: Conferences
-    desc: EuroSys'26, USENIX ATC'25, USENIX ATC'24 (ERC), ICPADS'22
+    desc: EuroSys'27 (reserved), EuroSys'26, USENIX ATC'25, USENIX ATC'24 (ERC), ICPADS'22
   - title: Program Co-Chair
     context: Workshop
     desc: The 25th ChinaSys Workshop
