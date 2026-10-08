@@ -36,6 +36,8 @@ profile:
     <font color="red">长期有效</font>：欢迎本校大二/大三本科生加入课题组开展系统方向的科研工作，方式包括但不限于PRP项目、毕业设计等。
 
 news:
+  - date: Oct, 2026
+    title: Invited to serve on the PC for ACM ATC'27.
   - date: July, 2026
     title: One paper has been conditionally accepted to SOSP'26.
   - date: June, 2026
@@ -47,7 +49,7 @@ news:
   - date: Sept, 2025
     title: One paper has been accepted to NeurIPS'25.
   - date: Sept, 2025
-    title: Invited to serve in the TPC for EuroSys 2026.
+    title: Invited to serve on the TPC for EuroSys 2026.
   - date: Aug, 2025
     title: One paper has been accepted to Trans. on Computers.
   - date: July, 2025
@@ -55,7 +57,7 @@ news:
   - date: April, 2025
     title: Our paper (crash consistency test of Open CAS) has been accepted to USENIX ATC'25.
   - date: Nov, 2024
-    title: Invited to serve in the TPC for USENIX ATC 2025.
+    title: Invited to serve on the TPC for USENIX ATC 2025.
   - date: Oct, 2024
     title: Medusa (serverless LLM serving with state materialization) has been accepted to ASPLOS'25.
   - date: Aug, 2024
