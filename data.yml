@@ -1,6 +1,6 @@
 profile:
   name: "Youmin Chen  陈游旻"
-  role: "Tenure-track Associate Professor"
+  role: "Tenure-Track Associate Professor"
   university: "Department of Computer Sciences, SJTU"
   email: "chenyoumin at sjtu dot edu dot cn"
   office: "SEIEE Building 3-524"
@@ -29,13 +29,12 @@ profile:
     - { name: "DBLP", icon: "fas fa-database", url: "https://dblp.org/pid/203/1564.html" }
   recruitment: |
 
-    I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. If you are interested, please refer to the [PDF](/static_files/recruitment_v4.pdf) and don't hesitate to reach out via email.
+    I am currently seeking PhD/Master/undergrad students to work on storage systems, operating systems, and interactions between AI and systems. If you are interested, don't hesitate to reach out via email.
     
-    招收2028年入学的硕/博士生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系，详情请参考[链接](/static_files/recruitment_v4.pdf)。
-
-    <font color="red">长期有效</font>：欢迎本校大二/大三本科生加入课题组开展系统方向的科研工作，方式包括但不限于PRP项目、毕业设计等。
-
+    招收2028年入学的硕/博士生及本校大二/大三本科生，如果你对存储系统、操作系统、大模型训推系统等相关领域感兴趣，欢迎与我联系。
 news:
+  - date: Oct, 2026
+    title: Peiyu won first prize in the 3rd China Graduate Student OS Open Source Innovation Competition. Congrats!
   - date: Oct, 2026
     title: Invited to serve on the PC for ACM ATC'27.
   - date: July, 2026
