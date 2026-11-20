@@ -219,7 +219,7 @@ team:
 
 research:
   - title: "Storage &times; OS: New Abstraction"
-    image: "/images/storage-os.jpg"
+    image: "/images/storage-os.png"
     desc: |
       As emerging storage and memory technologies deliver unprecedented hardware performance, 
       we aim to fundamentally redesign the OS-storage boundary through novel abstractions — 
@@ -228,7 +228,7 @@ research:
       - a userspace process for fast core reallocation (Vessel[[SOSP'24]](/papers/sosp24-vessel.pdf))
       - a holistic IO stack design for CSDs (&lambda;-IO[[FAST'23]](/papers/fast23-yang-zhe.pdf))
   - title: "Storage &times; H/W: New Systems"
-    image: "/images/storage-hw.jpg"
+    image: "/images/storage-hw.png"
     desc: |
       This research direction explores the vital intersection of advanced storage systems and emerging hardware architectures, 
       such as disaggregated memory, SmartNIC, etc. The significance lies in bridging the critical gap between raw hardware 
@@ -236,7 +236,7 @@ research:
       - crash consistency study of Open CAS ([USENIX ATC'25](https://www.usenix.org/conference/atc25/presentation/duan-shaohua))
       - an asynchronous IO engine for disaggregated memory (EasyIO[[EuroSys'24]](/papers/eurosys24-easyio.pdf)) 
   - title: "Storage &times; AI: New Applications"
-    image: "/images/storage-ai.jpg"
+    image: "/images/storage-ai.png"
     desc: |
       This research direction addresses the critical performance and cost bottlenecks of modern AI deployment by rethinking storage systems for data-intensive Large Language Models (LLMs). 
       - KV Cache management for LLM inference (HCache[[EuroSys'25]](/papers/eurosys25-hcache.pdf))
@@ -244,7 +244,7 @@ research:
 
 pastresearch:
   - title: "Networked Memory Architecture (2017 - 2020)"
-    image: "/images/storage-hw.jpg"
+    image: "/images/dsm.png"
     desc: |
       As the storage and network technologies evolve rapidly, the CPU performance remains comparatively stagnant as Moore's law slows in the past years. Due to this reason, the CPU running with the heavy-weight storage software can easily become the bottleneck. We tackle this problem from various aspects.
 
@@ -252,18 +252,18 @@ pastresearch:
       - RDMA-enabled distributed persistent shared memory (or DPSM) (Octopus[[USENIX ATC'17, TOS'20]](/papers/atc17-octopus.pdf)).
       - RDMA-based RPC system with scalability and reliablity (ScaleRPC[[EuroSys'19]](/papers/eurosys19-scalerpc.pdf))
   - title: "CPU-efficient IO Engine (2020 - 2024)"
-    image: "/images/storage-os.jpg"
+    image: "/images/ioengine.png"
     desc: |
       Purely reducing the overhead of storage software is still not enough; system designers must be also device-aware since the emerging hardware typically exhibits bizarre performance behavior. For example, non-volatile storage devices have asymmetric read/write performance, device-level IO amplification, and performance variability; in this context, we designed: 
       
       - a holistic IO stack design for computational storage devices (&lambda;-IO[[FAST'23]](/papers/fast23-yang-zhe.pdf))
       - a key-value store that uses compacted log to mitigate the IO amplification (FlatStore[[ASPLOS'20]](/papers/asplos20-flatstore.pdf)) 
   - title: "Low Tail Latency Concurrency Control (2020 - 2024)"
-    image: "/images/storage-ai.jpg"
+    image: "/images/tail.png"
     desc: |
       Apart from seeking higher throughput and lower latency, datacenter applications also require their performance to be predictable (often defined as 99th or 99.9th percentile latencies). Latency variability can arise for many reasons, including sharing resources (e.g., CPU cores, caches, memory bandwidth, etc.), background activities, queuing, and others. In the past years, we have witnessed an active line of research work that improves performance predictability at different layers, but they ignore the fact that the workload is another source of incurring latency spikes due to request conflicts. Here, I take a much deeper dive to the concurrency protocol design with the workload-aware principle in mind. 
       - *coordinated concurrency control* for tree-based index structures (&mu;Tree[[VLDB'20]](/papers/vldb20-utree.pdf)) 
-      - *pessimistic locking and opportunistic reading* for transactional systems (Plor[[SIGMOD'22]](/papers/sigmod22plor.pdf))
+      - *pessimistic locking and optimistic reading* for transactional systems (Plor[[SIGMOD'22]](/papers/sigmod22plor.pdf))
 
 services:
   - title: Program Committee Member
